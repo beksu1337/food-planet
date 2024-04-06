@@ -1,472 +1,469 @@
 {
-    "food": {
-        "pizza": [
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/796765ef227eb5b09f65e63de41def87/350x350",
-                "title": "Морс из черной смородины 0,5л",
-                "title_desc": "0.5 л",
-                "price": 119,
-                "type": "drink",
-                "id": "50"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/0943f228d0ea740ab63c6877a5547fa3/350x350",
-                "title": "Морс клюквенный 0,5л",
-                "title_desc": "0.5 л",
-                "price": 119,
-                "type": "drink",
-                "id": "51"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/6a7a3b15e6dbcbaec59772d145c697c9/350x350",
-                "title": "Энергетический напиток Берн 0.25л",
-                "title_desc": "0.25 л",
-                "price": 140,
-                "type": "drink",
-                "id": "52"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/d7a34031b59b1a69717e3d0828324167/350x350",
-                "title": "Добрый cola 0,5 л",
-                "title_desc": "0.5 л",
-                "price": 109,
-                "type": "drink",
-                "id": "53"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/0c679a18a80ddd40ea80b79aa84fe836/350x350",
-                "title": "Добрый лимон-лайм 0,5 л",
-                "title_desc": "0.5 л",
-                "price": 109,
-                "type": "drink",
-                "id": "54"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/d06aeb994194132e34468545f7bfe677/350x350",
-                "title": "Добрый апельсин 0,5 л",
-                "title_desc": "0.5 л",
-                "price": 109,
-                "type": "drink",
-                "id": "55"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/62c89428001a0ba6728c1e24ef360dad/350x350",
-                "title": "BonaAqua б/г 0,5 л",
-                "title_desc": "0.5 л",
-                "price": 99,
-                "type": "drink",
-                "id": "56"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/abf27626b5d8b01d85af2a291c4975c7/350x350",
-                "title": "Rich чёрный чай лимон 0,5 л",
-                "title_desc": "0.5 л",
-                "price": 109,
-                "type": "drink",
-                "id": "57"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/731c033ae5b9ad67b5143bc0f98ef720/500x400",
-                "title": "Сырная",
-                "title_desc": "Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо",
-                "price": 299,
-                "type": "pizza",
-                "id": "1"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/3bcaf777195515811a7381e16bbe2d35/500x400",
-                "title": "Пепперони фреш",
-                "title_desc": "Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус",
-                "price": 299,
-                "type": "pizza",
-                "id": "2"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/c5bb19e467b714fe2e53344556f39e92/500x400",
-                "title": "Цыпленок карри",
-                "title_desc": "Цыпленок, ананасы, соус карри, красный лук, сладкий перец, моцарелла, фирменный томатный соус",
-                "price": 439,
-                "type": "pizza",
-                "id": "3"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/7763647d468737a420a4d2e3723a187c/500x400",
-                "title": "Детская",
-                "title_desc": "фирменный соус, охотничьи колбаски, смесь отборных сыров, картошка фри, кетчуп",
-                "price": 710,
-                "type": "pizza",
-                "id": "8"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/4c7ace69bd3fd72663437f0b744f010f/500x400",
-                "title": "Сырный цыпленок",
-                "title_desc": "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
-                "price": 489,
-                "type": "pizza",
-                "id": "4"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/adf7771d6015db08c3a9bae3b830214a/500x400",
-                "title": "Четыре сезона",
-                "title_desc": "Увеличенная порция моцареллы, ветчина, пикантная пепперони, кубики брынзы, томаты, шампиньоны",
-                "price": 439,
-                "type": "pizza",
-                "id": "5"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/72d3d649dfd12c09ab0bf0e702eecef2/500x400",
-                "title": "Пепперони",
-                "title_desc": "Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус",
-                "price": 439,
-                "type": "pizza",
-                "id": "6"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/aa8f9d63c5bdb58fde43736b52ef2fdf/500x400",
-                "title": "Маргарита",
-                "title_desc": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-                "price": 389,
-                "type": "pizza",
-                "id": "7"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/7763647d468737a420a4d2e3723a187c/500x400",
-                "title": "Цыпленок ранч",
-                "title_desc": "Цыпленок, ветчина, соус ранч, моцарелла, томаты, чеснок",
-                "price": 489,
-                "type": "pizza",
-                "id": "8"
-            },
-            {
-                "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/c639561b307d96ad7758bb2930f4a867f42b80d185edc6f899197ffb2e227668?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
-                "title": "Куриная (30 см)",
-                "title_desc": "фирменный соус, куриная грудка в сливочном соусе, копченая курица, жареные вешенки, смесь отборных сыров, свежий болгарский перец",
-                "price": 610,
-                "type": "pizza",
-                "id": "9"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_1611_360044573.png",
-                "title": "Гамбургер",
-                "title_desc": "Рубленый бифштекс из натуральной цельной говядины на карамелизованной булочке, заправленной горчицей",
-                "price": 119,
-                "type": "burger",
-                "id": "10"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_2194_1339728781.png",
-                "title": "Чизбургер",
-                "title_desc": "Рубленый бифштекс из натуральной цельной говядины с кусочками сыра на карамелизованной булочке",
-                "price": 159,
-                "type": "burger",
-                "id": "11"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_1294_529512466.png",
-                "title": "Чикенбургер",
-                "title_desc": "Обжаренная куриная котлета, панированная в сухарях, которая подается на карамелизованной булочке",
-                "price": 129,
-                "type": "burger",
-                "id": "12"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_1611_360044573.png",
-                "title": "Макчикен",
-                "title_desc": "Обжаренная куриная котлета, панированная в сухарях, которая подается на карамелизованной булочке",
-                "price": 229,
-                "type": "burger",
-                "id": "13"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_2194_1339728781.png",
-                "title": "Биг Мак",
-                "title_desc": "Большой сандвич с двумя рублеными бифштексами из натуральной цельной говядины на специальной булочке",
-                "price": 259,
-                "type": "burger",
-                "id": "14"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_2204_338765906.png",
-                "title": "Роял Чизбургер",
-                "title_desc": "Большой рубленый бифштекс из натуральной цельной говядины с двумя кусочками сыра на карамелизованной булочке",
-                "price": 319,
-                "type": "burger",
-                "id": "15"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_2165_2037559722.png",
-                "title": "Филе-о-Фиш",
-                "title_desc": "Филе хорошо прожаренной рыбы (семейства тресковых), которое подается на пышной пропаренной булочке",
-                "price": 229,
-                "type": "burger",
-                "id": "16"
-            },
-            {
-                "img_src": "https://statickfc.cdnvideo.ru/products/medium/product_1612_1376103732.png",
-                "title": "Чикен Тейсти",
-                "title_desc": "Cандвич с большой куриной котлетой, панированной в сухарях на большой булочке с кунжутом",
-                "price": 179,
-                "type": "burger",
-                "id": "17"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/af2a12f427dd506393447f00e3d98acc/500x400",
-                "title": "Ролл Филадельфия в масаго",
-                "title_desc": "лосось, сыр сливочный, огурец, масаго 177 г",
-                "price": 349,
-                "type": "rolls",
-                "id": "18"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/7b799cd8798afa25b05dd9381a500105/350x350",
-                "title": "Ролл Лосось тар-тар",
-                "title_desc": "лосось, огурец, сыр сливочный 217 г",
-                "price": 399,
-                "type": "rolls",
-                "id": "19"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/c3ccee62c1150de43334114b760adc35/350x350",
-                "title": "Ролл Инь-ян",
-                "title_desc": "рыба красная терияки, креветка тигровая, краб-крем, салат айсберг, медовый соус, сладкий чили соус, кунжут 209 г",
-                "price": 349,
-                "type": "rolls",
-                "id": "20"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/3d17ba37620d15e66c36fd3b8ab7bf64/350x350",
-                "title": "Ролл Лосось Рэд",
-                "title_desc": "лосось, краб-крем, перец болгарский, масаго, кунжут 189 г",
-                "price": 329,
-                "type": "rolls",
-                "id": "21"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/3d17ba37620d15e66c36fd3b8ab7bf64/350x350",
-                "title": "Ролл Филадельфия",
-                "title_desc": "лосось, креветка тигровая, сыр сливочный, авокадо 227 г",
-                "price": 549,
-                "type": "rolls",
-                "id": "22"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/5658430fbaa394cd607fa2c89986896e/350x350",
-                "title": "Ролл Аляска",
-                "title_desc": "лосось, авокадо, огурец, икра масаго 207 г",
-                "price": 499,
-                "type": "rolls",
-                "id": "23"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/cedecad6d326065ff894c0bf26676962/350x350",
-                "title": "Королевский ролл с креветкой",
-                "title_desc": "лосось, краб-крем, перец болгарский, масаго, кунжут 189 г",
-                "price": 479,
-                "type": "rolls",
-                "id": "24"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/3fb6af52b375de517ab9eacb3043c7de/350x350",
-                "title": "Ролл Медовый окунь",
-                "title_desc": "окунь терияки, креветки, краб-крем, огурец, масаго, медовый соус, кунжут 214 г",
-                "price": 379,
-                "type": "rolls",
-                "id": "25"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/0cf9ada663128c29791ae6fb2865060a/350x350",
-                "title": "Суши Лосось 2 шт",
-                "title_desc": "лосось, рис 64 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "26"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/7b13f1254eb27eecb2b136c234729254/350x350",
-                "title": "Суши Угорь 2 шт",
-                "title_desc": "угорь, рис, нори, унаги соус, кунжут белый 66 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "27"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/a6ca1d32cffce82567a213237e1bb9da/350x350",
-                "title": "Суши Острый Угорь 2 шт",
-                "title_desc": "угорь, рис, нори, спайси соус 70 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "28"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/b4574909d79fd968b8cab4fb642e18f1/350x350",
-                "title": "Запеченные Суши Угорь 2 шт",
-                "title_desc": "угорь, рис, нори, яки соус 70 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "29"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/2a21e6d44768ae5c974df17df95af2b1/350x350",
-                "title": "Запеченные Суши Креветка 2 шт",
-                "title_desc": "креветка тигровая, рис, нори, яки соус 74 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "30"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/ca19e78826adcf5d60ea6d260881aa73/350x350",
-                "title": "Суши Креветка 2 шт",
-                "title_desc": "креветка тигровая, рис 64 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "31"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/827d4bae19da7d02de52e239f894a93a/350x350",
-                "title": "Суши Чука 2 шт",
-                "title_desc": "рис, нори, водоросли чука 60 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "32"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/1b245054e30fdcc4c9339b257307ad2e/350x350",
-                "title": "Запеченные Суши Краб 2 шт",
-                "title_desc": "краб-крем, рис, нори, яки соус 70 г",
-                "price": 199,
-                "type": "sushi",
-                "id": "33"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/78791ea26210aa3274b81f4f5bde34f7/500x400",
-                "title": "Фит-бокс с цыпленком",
-                "title_desc": "рис, огурец, салат айсберг, томаты черри, кукуруза консервированная, цыпленок",
-                "price": 349,
-                "type": "salat",
-                "id": "34"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/420ffc430555a228efe67638211623bf/350x350",
-                "title": "Лосось суси-пицца",
-                "title_desc": "лосось, сыр моцарелла, масаго, яки соус, унаги соус, укроп 205 г",
-                "price": 399,
-                "type": "salat",
-                "id": "35"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/d1c3d834c68a8020927f5106f23324fb/350x350",
-                "title": "Фреш суси-пицца",
-                "title_desc": "цыпленок, томаты черри, сыр моцарелла, масаго, яки соус, унаги соус, укроп 250 г",
-                "price": 329,
-                "type": "salat",
-                "id": "36"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/cbff1666104f0ce6b007c61717f57e21/350x350",
-                "title": "Витаминный",
-                "title_desc": "капуста, морковь, заправка легкая, кунжут 200 г",
-                "price": 139,
-                "type": "salat",
-                "id": "37"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/cd3dfdaf4453b5779c3e8b00d7238aaf/350x350",
-                "title": "Тори суси-пицца",
-                "title_desc": "цыпленок, шампиньоны, томаты черри, лук репчатый, сыр моцарелла, сыр пармезан, сливочный соус",
-                "price": 349,
-                "type": "salat",
-                "id": "38"
-            },
-            {
-                "img_src": "https://eurasia56.ru/wp-content/uploads/2017/11/Zapechennyj-ostryj-s-midiyami.png",
-                "title": "Мидии запеченные",
-                "title_desc": "мидии, яки соус, лимон 150 г",
-                "price": 399,
-                "type": "salat",
-                "id": "39"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/6920435e3e7fec2fd80978e6a66a65a2/350x350",
-                "title": "Фит-бокс с креветкой",
-                "title_desc": "рис, огурец, перец болгарский, томаты черри, тофу творог, креветка тигровая, лимон",
-                "price": 329,
-                "type": "salat",
-                "id": "40"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/117733820224d60fcdf96bb278d5d584/350x350",
-                "title": "Чука салат",
-                "title_desc": "водоросли чука, кунжут, лимон, ореховый соус 152 г",
-                "price": 279,
-                "type": "salat",
-                "id": "41"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/9657f5418a1b36b20178a5f452b86bea/350x350",
-                "title": "Набор Искушение",
-                "title_desc": "ролл Сочный фрукт, ролл Ореховый рай, ролл Тропический 498 г",
-                "price": 579,
-                "type": "desert",
-                "id": "42"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/65684e0023756771aeba84b734265450/350x350",
-                "title": "Тропический ролл",
-                "title_desc": "тесто харумаки, сыр сливочный, банан, ананас, сироп 166 г",
-                "price": 259,
-                "type": "desert",
-                "id": "43"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/a63a2a0109957cc7c1a267ba094326cc/350x350",
-                "title": "Ролл Ореховый рай",
-                "title_desc": "тесто харумаки, грецкий орех, банан, мёд, сыр сливочный, сироп шоколадный, сироп клубничный 166 г",
-                "price": 279,
-                "type": "desert",
-                "id": "44"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/f69b5300052cb7ed824d66d4277a3317/350x350",
-                "title": "Ролл Сочный фрукт",
-                "title_desc": "сыр сливочный, ананас, банан, киви, сироп клубничный, сироп шоколадный, тесто харумаки 166 г",
-                "price": 319,
-                "type": "desert",
-                "id": "45"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/9657f5418a1b36b20178a5f452b86bea/350x350",
-                "title": "Набор Искушение",
-                "title_desc": "ролл Сочный фрукт, ролл Ореховый рай, ролл Тропический 498 г",
-                "price": 579,
-                "type": "desert",
-                "id": "46"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/65684e0023756771aeba84b734265450/350x350",
-                "title": "Тропический ролл",
-                "title_desc": "тесто харумаки, сыр сливочный, банан, ананас, сироп 166 г",
-                "price": 259,
-                "type": "desert",
-                "id": "47"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/a63a2a0109957cc7c1a267ba094326cc/350x350",
-                "title": "Ролл Ореховый рай",
-                "title_desc": "тесто харумаки, грецкий орех, банан, мёд, сыр сливочный, сироп шоколадный, сироп клубничный 166 г",
-                "price": 329,
-                "type": "desert",
-                "id": "48"
-            },
-            {
-                "img_src": "https://cdn.sushiwok.ru/img/f69b5300052cb7ed824d66d4277a3317/350x350",
-                "title": "Ролл Сочный фрукт",
-                "title_desc": "сыр сливочный, ананас, банан, киви, сироп клубничный, сироп шоколадный, тесто харумаки 166 г",
-                "price": 259,
-                "type": "desert",
-                "id": "49"
-            }
-        ]
-    },
+    "food": [
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/3f5f2de78814f0d3c132d579f75e5fc8ffe994a48b6988e691d06628b0eae047?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Морс из черной смородины 0,5л",
+            "title_desc": "0.5 л",
+            "price": 119,
+            "type": "drink",
+            "id": "50"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/0428365141914f030992836ec51e6938437504ec3d60ceeeab8279788b3b0703?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Морс клюквенный 0,5л",
+            "title_desc": "0.5 л",
+            "price": 119,
+            "type": "drink",
+            "id": "51"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/f60546cb272ca23b7a9f6ccdc5ff2b99e33963b85a8ce11e961aff451119b280?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Энергетический напиток Берн 0.25л",
+            "title_desc": "0.25 л",
+            "price": 140,
+            "type": "drink",
+            "id": "52"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/9e7457b8143de13330e8d0f9f68ec7037056358ea9bba4492fb43e33845945b7?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Добрый cola 0,5 л",
+            "title_desc": "0.5 л",
+            "price": 109,
+            "type": "drink",
+            "id": "53"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/7d9a08c547d860747b113be972914ebf37c6495f5576d20bd192726e72f82f37?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Добрый лимон-лайм 0,5 л",
+            "title_desc": "0.5 л",
+            "price": 109,
+            "type": "drink",
+            "id": "54"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/cf1ee5204501e3bb530687c9ab4df2192c1c5ceea6c52ac8f1b375b12612fcd2?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Добрый апельсин 0,5 л",
+            "title_desc": "0.5 л",
+            "price": 109,
+            "type": "drink",
+            "id": "55"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/6321fb31697784470f222025c194650ddba4ce83edb08bfa558fa5841c3707cb?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title_desc": "0.5 л",
+            "price": 99,
+            "type": "drink",
+            "id": "56"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/7d9a08c547d860747b113be972914ebf37c6495f5576d20bd192726e72f82f37?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Rich чёрный чай лимон 0,5 л",
+            "title_desc": "0.5 л",
+            "price": 109,
+            "type": "drink",
+            "id": "57"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/336f7c9b085ca7c5836168c077cab8ed7d105e6654309128cd65947800480150?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Сырная",
+            "title_desc": "Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо",
+            "price": 299,
+            "type": "pizza",
+            "id": "1"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/6133cd4f806186c7a03227fd4a3912023da4f87c54fca10fb436be75a0e70c1a?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Пепперони фреш",
+            "title_desc": "Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус",
+            "price": 299,
+            "type": "pizza",
+            "id": "2"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/a8ebcee140fbde3156d8d59dfc80dc7ee95e06043132aa18414fb388ce0f2e73?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Цыпленок карри",
+            "title_desc": "Цыпленок, ананасы, соус карри, красный лук, сладкий перец, моцарелла, фирменный томатный соус",
+            "price": 439,
+            "type": "pizza",
+            "id": "3"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/19e82c7c05fd2b000117e4a260c14364de12195200fac20604e464a9d89eea03?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Детская",
+            "title_desc": "фирменный соус, охотничьи колбаски, смесь отборных сыров, картошка фри, кетчуп",
+            "price": 710,
+            "type": "pizza",
+            "id": "61"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/c639561b307d96ad7758bb2930f4a867f42b80d185edc6f899197ffb2e227668?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Сырный цыпленок",
+            "title_desc": "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+            "price": 489,
+            "type": "pizza",
+            "id": "4"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/3afc0b7471e4232167b4b695c565e6badd0c02abc786cc821ee2724411de4a04?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Четыре сезона",
+            "title_desc": "Увеличенная порция моцареллы, ветчина, пикантная пепперони, кубики брынзы, томаты, шампиньоны",
+            "price": 439,
+            "type": "pizza",
+            "id": "5"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/87a0e24abf14f56d7ad7b9ed4551d3923ebc0900a1b4fd24a209fd962453011f?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Пепперони",
+            "title_desc": "Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус",
+            "price": 439,
+            "type": "pizza",
+            "id": "6"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/499f08aef5501aa0823665d9afe9c0c0f3867315320493b5324010fe9d89b07c?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Маргарита",
+            "title_desc": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
+            "price": 389,
+            "type": "pizza",
+            "id": "7"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/9396b5c8adb4d91482cb8ed02d4daf9e1ba6cfa1a8f4f9807626d86256184805?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Цыпленок ранч",
+            "title_desc": "Цыпленок, ветчина, соус ранч, моцарелла, томаты, чеснок",
+            "price": 489,
+            "type": "pizza",
+            "id": "8"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/c639561b307d96ad7758bb2930f4a867f42b80d185edc6f899197ffb2e227668?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Куриная (30 см)",
+            "title_desc": "фирменный соус, куриная грудка в сливочном соусе, копченая курица, жареные вешенки, смесь отборных сыров, свежий болгарский перец",
+            "price": 610,
+            "type": "pizza",
+            "id": "9"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/6bc8d2abc907afdcd2b286434063fb419cf97893c3747fec16e366b3670c424b?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Гамбургер",
+            "title_desc": "Рубленый бифштекс из натуральной цельной говядины на карамелизованной булочке, заправленной горчицей",
+            "price": 119,
+            "type": "burger",
+            "id": "10"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/ae38932b322350af30331d35d1dbbb1cabf75b907f847bdc21c443901cecc6ef?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Чизбургер",
+            "title_desc": "Рубленый бифштекс из натуральной цельной говядины с кусочками сыра на карамелизованной булочке",
+            "price": 159,
+            "type": "burger",
+            "id": "11"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/1a98608bc782a89ba2007c550aecb800211d7142e830c1137716c2f0ad2411e6?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Чикенбургер",
+            "title_desc": "Обжаренная куриная котлета, панированная в сухарях, которая подается на карамелизованной булочке",
+            "price": 129,
+            "type": "burger",
+            "id": "12"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/6bc8d2abc907afdcd2b286434063fb419cf97893c3747fec16e366b3670c424b?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Макчикен",
+            "title_desc": "Обжаренная куриная котлета, панированная в сухарях, которая подается на карамелизованной булочке",
+            "price": 229,
+            "type": "burger",
+            "id": "13"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/68dc3840c9c6624d478e7b6e57dc84211bf0aacb6eabe900bce2646036265197?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Биг Мак",
+            "title_desc": "Большой сандвич с двумя рублеными бифштексами из натуральной цельной говядины на специальной булочке",
+            "price": 259,
+            "type": "burger",
+            "id": "14"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/1a98608bc782a89ba2007c550aecb800211d7142e830c1137716c2f0ad2411e6?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Роял Чизбургер",
+            "title_desc": "Большой рубленый бифштекс из натуральной цельной говядины с двумя кусочками сыра на карамелизованной булочке",
+            "price": 319,
+            "type": "burger",
+            "id": "15"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/68dc3840c9c6624d478e7b6e57dc84211bf0aacb6eabe900bce2646036265197?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Филе-о-Фиш",
+            "title_desc": "Филе хорошо прожаренной рыбы (семейства тресковых), которое подается на пышной пропаренной булочке",
+            "price": 229,
+            "type": "burger",
+            "id": "16"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/d52a70925b16101d24ee017558e11b50673e8b139d6e81b59cd728a35109fe38?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Чикен Тейсти",
+            "title_desc": "Cандвич с большой куриной котлетой, панированной в сухарях на большой булочке с кунжутом",
+            "price": 179,
+            "type": "burger",
+            "id": "17"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/d1c9e3ceb3690df2822004964c563677b44d77bcf9a196d7ccde84024f7bd03b?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл Филадельфия в масаго",
+            "title_desc": "лосось, сыр сливочный, огурец, масаго 177 г",
+            "price": 349,
+            "type": "rolls",
+            "id": "18"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/a453fa30487372a224879d042a625ebff2fcbd0c6a3c0188fdeef25f3134801b?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл Лосось тар-тар",
+            "title_desc": "лосось, огурец, сыр сливочный 217 г",
+            "price": 399,
+            "type": "rolls",
+            "id": "19"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/924dcfdf82174a181a552edabf5c631f816b05b8d0dbfe935758e630f50ef890?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл Инь-ян",
+            "title_desc": "рыба красная терияки, креветка тигровая, краб-крем, салат айсберг, медовый соус, сладкий чили соус, кунжут 209 г",
+            "price": 349,
+            "type": "rolls",
+            "id": "20"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/b00f802161e3a4eba01783481cdbdbca85cb7a3cb273d98c300738761746a38a?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл Лосось Рэд",
+            "title_desc": "лосось, краб-крем, перец болгарский, масаго, кунжут 189 г",
+            "price": 329,
+            "type": "rolls",
+            "id": "21"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/16951ba9b55843bd2e592e4c888b6908b6bb74d4acebb749c67606078015b56d?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл Филадельфия",
+            "title_desc": "лосось, креветка тигровая, сыр сливочный, авокадо 227 г",
+            "price": 549,
+            "type": "rolls",
+            "id": "22"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/1d78de88a7d1c15d755523b0ef5cc7596fea807a2946a7655c4644f37fe8f8f3?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл Аляска",
+            "title_desc": "лосось, авокадо, огурец, икра масаго 207 г",
+            "price": 499,
+            "type": "rolls",
+            "id": "23"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/d68758b9681d92aabbebb20f21ebe75360c900839364c8b30678ff686c657f5e?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Королевский ролл с креветкой",
+            "title_desc": "лосось, краб-крем, перец болгарский, масаго, кунжут 189 г",
+            "price": 479,
+            "type": "rolls",
+            "id": "24"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/8357c84fc8eea478c3def4ff601ca412c19e89d8ef486bc5e17d9404bba7647c?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл Медовый окунь",
+            "title_desc": "окунь терияки, креветки, краб-крем, огурец, масаго, медовый соус, кунжут 214 г",
+            "price": 379,
+            "type": "rolls",
+            "id": "25"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/1f1ae01c1c274b1ce1a85b7d6f0b6a2d2ebe4ac97784bdcd316e8db6595d371f?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Суши Лосось 2 шт",
+            "title_desc": "лосось, рис 64 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "26"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/3cd3aaca07343daaa9c4be7d7591f6107747c4a2a60535595f2e3875f553fb86?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Суши Угорь 2 шт",
+            "title_desc": "угорь, рис, нори, унаги соус, кунжут белый 66 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "27"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/fd4da8d69b3cbeef78533cdf4080ab1d06cb2e3fe947dca48dfb94f0c39ef3be?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Суши Острый Угорь 2 шт",
+            "title_desc": "угорь, рис, нори, спайси соус 70 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "28"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/774dbbb75a6ac1dd3dafd0b79d6cb9080f923595c524a66544fa54ebcc2f48d8?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Запеченные Суши Угорь 2 шт",
+            "title_desc": "угорь, рис, нори, яки соус 70 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "29"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/f7a90c5b56334ee9c1f24d7164067a6bc93173281f89aa89dc1725da9178317e?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Запеченные Суши Креветка 2 шт",
+            "title_desc": "креветка тигровая, рис, нори, яки соус 74 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "30"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/33107b94718a729759632118abd65a3698afd8f8aefce924f7d3f47395999d9f?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Суши Креветка 2 шт",
+            "title_desc": "креветка тигровая, рис 64 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "31"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/3374ef87792f2d6e4fa0425328f53bf93284ecec849a21d64ba9657d97b9911d?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Суши Чука 2 шт",
+            "title_desc": "рис, нори, водоросли чука 60 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "32"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/9f3a2177d1480ff46d19560c7a90c037c17baf5dd568e6dc4d6af514287a4abc?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Запеченные Суши Краб 2 шт",
+            "title_desc": "краб-крем, рис, нори, яки соус 70 г",
+            "price": 199,
+            "type": "sushi",
+            "id": "33"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/a0b2f6bcfafd0ee4eca1aa6a05cf42602ff5e051b878438beb321d5740c0a704?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Фит-бокс с цыпленком",
+            "title_desc": "рис, огурец, салат айсберг, томаты черри, кукуруза консервированная, цыпленок",
+            "price": 349,
+            "type": "salat",
+            "id": "34"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/5748fb74f5d0df24019c0738f7ec5d1d8d3f68fae94245bbf70346e7f9e0bfd5?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Лосось суси-пицца",
+            "title_desc": "лосось, сыр моцарелла, масаго, яки соус, унаги соус, укроп 205 г",
+            "price": 399,
+            "type": "salat",
+            "id": "35"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/e446e3eb79268e2e07a45038a417a47722415083c86256a185377e549080ccff?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Фреш суси-пицца",
+            "title_desc": "цыпленок, томаты черри, сыр моцарелла, масаго, яки соус, унаги соус, укроп 250 г",
+            "price": 329,
+            "type": "salat",
+            "id": "36"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/5748fb74f5d0df24019c0738f7ec5d1d8d3f68fae94245bbf70346e7f9e0bfd5?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Витаминный",
+            "title_desc": "капуста, морковь, заправка легкая, кунжут 200 г",
+            "price": 139,
+            "type": "salat",
+            "id": "37"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/a0b2f6bcfafd0ee4eca1aa6a05cf42602ff5e051b878438beb321d5740c0a704?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Тори суси-пицца",
+            "title_desc": "цыпленок, шампиньоны, томаты черри, лук репчатый, сыр моцарелла, сыр пармезан, сливочный соус",
+            "price": 349,
+            "type": "salat",
+            "id": "38"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/e446e3eb79268e2e07a45038a417a47722415083c86256a185377e549080ccff?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Мидии запеченные",
+            "title_desc": "мидии, яки соус, лимон 150 г",
+            "price": 399,
+            "type": "salat",
+            "id": "39"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/5748fb74f5d0df24019c0738f7ec5d1d8d3f68fae94245bbf70346e7f9e0bfd5?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Фит-бокс с креветкой",
+            "title_desc": "рис, огурец, перец болгарский, томаты черри, тофу творог, креветка тигровая, лимон",
+            "price": 329,
+            "type": "salat",
+            "id": "40"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/e446e3eb79268e2e07a45038a417a47722415083c86256a185377e549080ccff?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Чука салат",
+            "title_desc": "водоросли чука, кунжут, лимон, ореховый соус 152 г",
+            "price": 279,
+            "type": "salat",
+            "id": "41"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/1f80f07b44e0ec2aa9fccd15f3d12f236548343e434facaa4d4d857d082888fd?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Десерт Macarons Ассорти",
+            "title_desc": "Кондитерское изделие французского происхождения. Это два нежных тающих воздушных печенья на основе миндальной муки, соединенных различными начинками на основе белого шоколада",
+            "price": 579,
+            "type": "desert",
+            "id": "42"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/f056c4fb02704c976d51283ecc5d62cd1478c2c60e11f528f2ce5f38749c6c84?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Медовик со сливками в стаканчике",
+            "title_desc": "Десерт в стакане в виде медовых коржей, прослоенных кремом из натуральных взбитых сливок. Поверхность покрыта медовой крошкой",
+            "price": 259,
+            "type": "desert",
+            "id": "43"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/47e8d352557fce3f38fe6d4bf00690ce6db15a958097f1613793d53df12cae19?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Медовик с орехами в стаканчике",
+            "title_desc": "Десерт в стакане в виде медовых коржей, прослоенных кремом из натуральных взбитых сливок с грецким орехом. Поверхность покрыта медовой крошкой с измельченным орехом",
+            "price": 279,
+            "type": "desert",
+            "id": "44"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/99043a7f4a91b9992e8de18a1f1fa6fe418b56ff29224462d8ece070e4769824?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Маршмэллоу",
+            "title_desc": "Сахарный легкий, воздушный десерт",
+            "price": 319,
+            "type": "desert",
+            "id": "45"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/2fd6431614123adc03df845598258542aecd6da6dbc03126abe109a30ed8617a?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Трайфл",
+            "title_desc": "Трайфл – это классический английский десерт, который приготовлен из слоя шоколадного бисквита и сливочносырного крема с шоколадным крамблом.",
+            "price": 579,
+            "type": "desert",
+            "id": "46"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/e1aa8c8d76134e66202eb165a1b30d9e1c28e640b234779c4e56f14dc0356b69?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Трайфл Наполеон",
+            "title_desc": "Трайфл – это классический английский десерт, который приготовлен из слоя шоколадного бисквита и сливочносырного крема с шоколадным крамблом.",
+            "price": 259,
+            "type": "desert",
+            "id": "47"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/270cc3fc82d6d284b749c77dcd999f1f9c1ca0a4c3f71f02d6f939a638934a43?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Macarons Бабл Гам",
+            "title_desc": "Macarons воздушные печенья на основе миндальной муки, склеенные между собой начинкой Бабл гам и персик-манго",
+            "price": 329,
+            "type": "desert",
+            "id": "48"
+        },
+        {
+            "img_src": "https://images.deliveryhero.io/image/menus-glovo/products/c93a3291a78899b60a7d11cbe43e3942867a3690991b264aa6b056009849a846?t=W3siYXV0byI6eyJxIjoibG93In19LHsicmVzaXplIjp7IndpZHRoIjo2MDB9fV0=",
+            "title": "Ролл-суфле с фисташкой",
+            "title_desc": "Воздушный десерт, созданный на основе легкой меренги, напоминает воздушное суфлейное облако. Внутри прослоен фисташково-сырным кремом и свежими ягодами малины.",
+            "price": 259,
+            "type": "desert",
+            "id": "49"
+        }
+    ],
     "reviews": [
         {
             "dateCurr": "02.07.2022",

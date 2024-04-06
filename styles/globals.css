@@ -4,14 +4,15 @@
 
 @layer base {
     :root {
-        --background: 0, 0%, 99%;
+        /* --background: 0, 0%, 99%; */
+        --background: 240 29% 92%;
         --foreground: 177, 36%, 23%;
 
         --primary: 8, 100%, 62%;
-        --primary-foreground: 0, 0%, 100%;
+        --primary-foreground: 240 29% 92%;
 
         --secondary: 177, 21%, 21%;
-        --secondary-foreground: 0, 0%, 100%;
+        --secondary-foreground: 240 29% 92%;
 
         --border: 0, 0%, 77%;
         --input: 177, 5%, 24%;
@@ -25,10 +26,10 @@
         --foreground: 210 40% 98%;
 
         --primary: 8, 100%, 62%;
-        --primary-foreground: 0, 0%, 100%;
+        --primary-foreground: 240 29% 92%;
 
         --secondary: 177, 21%, 21%;
-        --secondary-foreground: 0, 0%, 100%;
+        --secondary-foreground: 240 29% 92%;
 
         --border: 0, 0%, 77%;
         --input: 177, 5%, 24%;
@@ -41,12 +42,22 @@
         @apply border-border;
     }
 
-    html,
+    /* html,
     body {
         scrollbar-gutter: stable;
-    }
+    } */
 
     body {
         @apply bg-background text-foreground;
+    }
+}
+
+@layer components {
+    .no-select {
+        user-select: none;
+    }
+
+    .img-no-select {
+        pointer-events: none;
     }
 }
