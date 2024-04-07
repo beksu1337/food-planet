@@ -22,7 +22,7 @@ export const MenuNavNew = () => {
     const state = useStore((state) => state);
 
     const { data, error, isLoading } = useSWR(
-        `${process.env.PUBLIC_NEXT_BASE_URL}?type=${state.currentNewNav}`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}?type=${state.currentNewNav}`,
         fetcher
     );
 
