@@ -1,12 +1,12 @@
 import { FoodModel } from '@/lib/types';
-import { NewItemCard } from './new-item-card';
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from './ui/carousel';
+} from '../ui/carousel';
+import { NewItemCard } from './new-item-card';
 
 export const NewItemsCarousel = ({ data }: { data: FoodModel[] }) => {
     return (

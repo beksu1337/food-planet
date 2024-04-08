@@ -20,18 +20,16 @@ export const links = [
     },
     {
         name: 'Меню',
-        href: '/menu2',
+        href: '/menu',
     },
     {
         name: 'О нас',
-        href: '/about2',
+        href: '/about',
     },
 ];
 
 export const Header = () => {
     const path = usePathname();
-
-    console.log(path);
 
     return (
         <NavigationMenu className='container relative w-full pt-4'>

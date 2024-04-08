@@ -1,4 +1,5 @@
-import { MenuNavNew } from '@/components/menu-nav';
+import { Benefits } from '@/components/benefits';
+import { MenuNavNew } from '@/components/new-items/menu-nav-new';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
@@ -6,7 +7,7 @@ import burgerImg from '/public/burger.png';
 
 export default function Home() {
     return (
-        <main>
+        <main className='min-h-screen'>
             <div className='flex container justify-between mb-44'>
                 <div className='max-w-[500px] flex mt-48 flex-col gap-3'>
                     <h1 className='font-black text-[36px] leading-8'>
@@ -32,6 +33,7 @@ export default function Home() {
             </div>
 
             <MenuNavNew />
+            <Benefits />
         </main>
     );
 }
