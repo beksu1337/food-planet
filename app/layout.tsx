@@ -1,12 +1,12 @@
+import { Footer } from '@/components/footer';
 import { Header } from '@/components/header/header';
 import { ThemeProvider } from '@/lib/theme-provider';
-import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
-import { Inter, Roboto } from 'next/font/google';
+import { Nunito_Sans } from 'next/font/google';
 import '../styles/globals.css';
 
-const roboto = Roboto({
-    subsets: ['cyrillic', 'latin'],
+const poppins = Nunito_Sans({
+    subsets: ['latin', 'cyrillic'],
     weight: ['400', '500', '700', '900'],
 });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='ru' suppressHydrationWarning>
-            <body className={roboto.className}>
+            <body className={poppins.className}>
                 <ThemeProvider
                     enableSystem
                     attribute='class'
@@ -31,6 +31,7 @@ export default function RootLayout({
                 >
                     <Header />
                     {children}
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>

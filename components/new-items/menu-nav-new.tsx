@@ -1,28 +1,18 @@
 'use client';
 
 import { MENU_LIST } from '@/lib/const';
-import { FoodType } from '@/lib/types';
+import { useNewTabStore } from '@/lib/store';
 import { cn, fetcher } from '@/lib/utils';
 import useSWR from 'swr';
-import { create } from 'zustand';
+import { Button } from '../ui/button';
 import { NewItemSkeleton } from './new-item-skeleton';
 import { NewItemsCarousel } from './new-items-carousel';
 
-type Store = {
-    currentNewNav: string;
-    changeCurrent: (newCurrent: string) => void;
-};
-
-const useStore = create<Store>()((set) => ({
-    currentNewNav: FoodType.Pizza,
-    changeCurrent: (newCurrent) => set(() => ({ currentNewNav: newCurrent })),
-}));
-
 export const MenuNavNew = () => {
-    const state = useStore((state) => state);
+    const state = useNewTabStore((state) => state);
 
     const { data, error, isLoading } = useSWR(
-        `${process.env.NEXT_PUBLIC_BASE_URL}?type=${state.currentNewNav}`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}?type=${state.currentNavTab}`,
         fetcher
     );
 
@@ -37,9 +27,9 @@ export const MenuNavNew = () => {
                         <div
                             className={cn('cursor-pointer hover:text-primary', {
                                 'text-primary':
-                                    item.url === state.currentNewNav,
+                                    item.url === state.currentNavTab,
                             })}
-                            onClick={() => state.changeCurrent(item.url)}
+                            onClick={() => state.changeCurrentTab(item.url)}
                             key={item.id}
                         >
                             {item.title}
@@ -47,11 +37,18 @@ export const MenuNavNew = () => {
                     ))}
                 </nav>
 
-                {!isLoading ? (
-                    <NewItemsCarousel data={data} />
-                ) : (
+                {error?.status === 404 || isLoading ? (
                     <NewItemSkeleton />
+                ) : (
+                    <NewItemsCarousel data={data} />
                 )}
+
+                <Button
+                    variant='outline'
+                    className='block mt-5 text-base px-4 mx-auto border border-primary text-primary rounded-full'
+                >
+                    Перейти в меню
+                </Button>
             </div>
         </div>
     );
