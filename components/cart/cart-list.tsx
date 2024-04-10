@@ -12,22 +12,22 @@ export const CartList = ({
     decrease: (id: string) => void;
 }) => {
     return (
-        <div className='flex flex-col gap-3 w-full pr-4 no-select'>
+        <div className='no-select flex w-full flex-col gap-3 pr-4'>
             {cart?.map((item) => (
                 <div
                     key={item.id}
-                    className='flex flex-col relative rounded-sm dark:bg-neutral-800 bg-slate-300 items-start gap-2 flex-wrap p-2 w-full'
+                    className='relative flex w-full flex-col flex-wrap items-start gap-2 rounded-sm bg-slate-300 p-2 dark:bg-gray-800'
                 >
-                    <div className='pr-14 w-full'>
+                    <div className='w-full pr-14'>
                         <Image
                             src={item.img_src}
                             alt='item'
                             width={50}
                             height={50}
-                            className='rounded-md absolute right-[6px] top-[6px]'
+                            className='absolute right-[6px] top-[6px] rounded-md'
                         />
                         <p>
-                            <span className='font-black mr-2'>
+                            <span className='mr-2 font-black'>
                                 {item.count}x
                             </span>{' '}
                             <span className='leading-4'>{item.title}</span>
@@ -36,16 +36,16 @@ export const CartList = ({
                             {item.price * item.count} сом
                         </p>
                     </div>
-                    <div className='w-full flex justify-between'>
+                    <div className='flex w-full justify-between'>
                         <Minus
                             size={32}
                             onClick={() => decrease(item.id)}
-                            className='cursor-pointer border-red-500 border rounded-sm text-red-500'
+                            className='cursor-pointer rounded-sm border border-red-500 text-red-500'
                         />
                         <Plus
                             size={32}
                             onClick={() => increase(item)}
-                            className='cursor-pointer border rounded-sm text-green-500 border-green-500'
+                            className='cursor-pointer rounded-sm border border-green-500 text-green-500'
                         />
                     </div>
                 </div>

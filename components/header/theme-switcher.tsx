@@ -5,6 +5,12 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '@/components/ui/tooltip';
 import { Ellipsis, Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
@@ -26,11 +32,24 @@ export const ThemeSwitcher = () => {
     }
 
     return (
-        <div className='h-max w-max transition-all duration-200 hover:text-primary-foreground justify-center cursor-pointer p-2 hover:bg-primary rounded-full'>
+        <TooltipProvider disableHoverableContent delayDuration={50}>
             <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                    {theme === 'dark' ? <Sun size={28} /> : <Moon size={28} />}
-                </DropdownMenuTrigger>
+                <Tooltip>
+                    <TooltipTrigger>
+                        <DropdownMenuTrigger asChild>
+                            <div className='h-max w-max cursor-pointer justify-center rounded-full p-2 transition-all duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 dark:hover:text-primary-foreground'>
+                                {theme === 'dark' ? (
+                                    <Sun size={28} />
+                                ) : (
+                                    <Moon size={28} />
+                                )}
+                            </div>
+                        </DropdownMenuTrigger>
+                    </TooltipTrigger>
+                    <TooltipContent sideOffset={12} className='no-select'>
+                        <p>Сменить тему</p>
+                    </TooltipContent>
+                </Tooltip>
 
                 <DropdownMenuContent
                     align='center'
@@ -38,7 +57,7 @@ export const ThemeSwitcher = () => {
                     className='bg-background'
                 >
                     <DropdownMenuItem
-                        className='hover:bg-secondary dark:hover:bg-secondary-foreground hover:text-background cursor-pointer'
+                        className='cursor-pointer hover:bg-gray-500 hover:text-background dark:hover:bg-secondary-foreground'
                         onClick={() => setTheme('light')}
                     >
                         Светлая
@@ -47,7 +66,7 @@ export const ThemeSwitcher = () => {
                     <DropdownMenuSeparator className='bg-border' />
 
                     <DropdownMenuItem
-                        className='hover:bg-secondary dark:hover:bg-secondary-foreground hover:text-background cursor-pointer'
+                        className='cursor-pointer hover:bg-gray-500 hover:text-background dark:hover:bg-secondary-foreground'
                         onClick={() => setTheme('dark')}
                     >
                         Темная
@@ -56,13 +75,13 @@ export const ThemeSwitcher = () => {
                     <DropdownMenuSeparator className='bg-border' />
 
                     <DropdownMenuItem
-                        className='hover:bg-secondary dark:hover:bg-secondary-foreground hover:text-background cursor-pointer'
+                        className='cursor-pointer hover:bg-gray-500 hover:text-background dark:hover:bg-secondary-foreground'
                         onClick={() => setTheme('system')}
                     >
                         Системная
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
-        </div>
+        </TooltipProvider>
     );
 };

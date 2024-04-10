@@ -47,6 +47,11 @@
         scrollbar-gutter: stable;
     } */
 
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+
     body {
         @apply bg-background text-foreground;
     }

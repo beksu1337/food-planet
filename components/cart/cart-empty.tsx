@@ -3,13 +3,13 @@ import shopping from '/public/shopping.png';
 
 export const CartEmpty = () => {
     return (
-        <div className='flex no-select flex-col justify-center items-center'>
+        <div className='no-select flex flex-col items-center justify-center'>
             <Image
                 src={shopping}
                 alt='shopping'
-                className='w-[200px] dark:invert'
+                className='img-no-select w-[200px] dark:invert'
             />
-            <p className='font-bold text-base'>Ваша корзина пуста</p>
+            <p className='text-base font-bold'>Ваша корзина пуста</p>
         </div>
     );
 };

@@ -17,12 +17,12 @@ export const MenuNavNew = () => {
     );
 
     return (
-        <div className='border-t pt-3 pb-6 relative'>
+        <div className='relative border-t pb-6 pt-3'>
             <div className='container'>
-                <h2 className='ml-4 font-black text-[30px] absolute'>
+                <h2 className='absolute z-30 ml-4 text-[30px] font-black'>
                     Новинки
                 </h2>
-                <nav className='flex pb-6 gap-6 justify-center pt-2'>
+                <nav className='z-20 flex justify-center gap-6 pb-6 pt-2'>
                     {MENU_LIST.map((item) => (
                         <div
                             className={cn('cursor-pointer hover:text-primary', {
@@ -37,15 +37,17 @@ export const MenuNavNew = () => {
                     ))}
                 </nav>
 
-                {error?.status === 404 || isLoading ? (
-                    <NewItemSkeleton />
-                ) : (
-                    <NewItemsCarousel data={data} />
-                )}
+                <div>
+                    {error?.status === 404 || isLoading ? (
+                        <NewItemSkeleton />
+                    ) : (
+                        <NewItemsCarousel data={data} />
+                    )}
+                </div>
 
                 <Button
                     variant='outline'
-                    className='block mt-5 text-base px-4 mx-auto border border-primary text-primary rounded-full'
+                    className='mx-auto mt-5 block rounded-full border border-primary px-4 text-base text-primary'
                 >
                     Перейти в меню
                 </Button>
