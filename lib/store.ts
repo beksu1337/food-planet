@@ -20,7 +20,7 @@ export interface CartItem extends FoodModel {
 type CartStore = {
     cart: CartItem[];
     getCartItems: () => void;
-    increase: (newFood: FoodModel) => void;
+    increase: (newFood: FoodModel, count?: number) => void;
     decrease: (foodId: string) => void;
     removeAll: () => void;
 };
@@ -31,15 +31,20 @@ const getInitialCart = () => {
     }
 };
 
-const increaseFromCount = (food: FoodModel, cart: CartItem[]) => {
-    const cartItem = { ...food, count: 1 };
+const increaseFromCount = (
+    food: FoodModel,
+    cart: CartItem[],
+    count?: number
+) => {
+    const cartItem = { ...food, count: count || 1 };
     const isProductInCart = cart?.map((elem) => elem.id).includes(food.id);
 
     if (!isProductInCart) {
         return [...cart, cartItem];
     } else {
         return cart?.map((elem) => {
-            if (elem.id === food.id) return { ...elem, count: elem.count + 1 };
+            if (elem.id === food.id)
+                return { ...elem, count: elem.count + (count || 1) };
             return elem;
         });
     }
@@ -62,9 +67,9 @@ export const useCartStore = create<CartStore>((set, get) => ({
 
     getCartItems: () => set((state) => ({ cart: state.cart })),
 
-    increase: (newFood: FoodModel) => {
+    increase: (newFood: FoodModel, count?: number) => {
         const { cart } = get();
-        const updated = increaseFromCount(newFood, cart);
+        const updated = increaseFromCount(newFood, cart, count);
         localStorage.setItem('cart', JSON.stringify(updated));
         set({ cart: updated });
     },

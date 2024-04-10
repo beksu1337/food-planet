@@ -33,12 +33,12 @@ export const Header = () => {
 
     return (
         <NavigationMenu className='container relative w-full pt-4'>
-            <NavigationMenuList className='justify-between items-center border px-6 rounded-full py-2'>
+            <NavigationMenuList className='items-center justify-between rounded-full border px-6 py-2'>
                 <NavigationMenuItem>
                     <Link href='/' className='flex items-center gap-[8px]'>
                         <LogoIcon />
                         <div>
-                            <p className='font-bold uppercase leading-5 text-[20px]'>
+                            <p className='text-[20px] font-bold uppercase leading-5'>
                                 food planet
                             </p>
                             <p className='text-[16px] leading-4 '>
@@ -47,7 +47,7 @@ export const Header = () => {
                         </div>
                     </Link>
                 </NavigationMenuItem>
-                <div className='flex gap-6 mr-10 no-select'>
+                <div className='no-select mr-10 flex gap-6'>
                     {links.map((link) => (
                         <NavigationMenuItem key={link.name}>
                             <Link

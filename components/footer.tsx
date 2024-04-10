@@ -7,12 +7,12 @@ import { links } from './header/header';
 
 export const Footer = () => {
     return (
-        <div className='bg-secondary dark:bg-neutral-800 w-full text-secondary-foreground p-8'>
-            <div className='container flex justify-between items-center'>
+        <div className='w-full rounded-tl-3xl rounded-tr-3xl bg-secondary p-8 text-secondary-foreground dark:bg-gray-800'>
+            <div className='container flex items-center justify-between'>
                 <div className='flex items-center gap-[8px]'>
                     <LogoFooter />
                     <div>
-                        <p className='font-bold uppercase leading-5 text-[20px]'>
+                        <p className='text-[20px] font-bold uppercase leading-5'>
                             food planet
                         </p>
                         <p className='text-[16px] leading-4 '>
@@ -21,7 +21,7 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <nav className='flex gap-6 mr-10 no-select'>
+                <nav className='no-select mr-10 flex gap-6'>
                     {links.map((link) => (
                         <Link
                             key={link.name}

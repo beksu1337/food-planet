@@ -1,15 +1,17 @@
 import { useCartStore } from '@/lib/store';
 import { FoodModel } from '@/lib/types';
-import { CircleMinus, CirclePlus } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import Image from 'next/image';
+import { useToast } from '../ui/use-toast';
 
 interface NewItemCardProps extends FoodModel {}
 
 export const NewItemCard = (p: NewItemCardProps) => {
     const { cart, increase } = useCartStore((state) => state);
+    const { toast } = useToast();
 
     return (
-        <div className='rounded-[50px] relative px-3 h-[450px] gap-1 py-2 flex flex-col justify-start bg-slate-300 dark:border dark:bg-background dark:text-foreground text-background-foreground cursor-pointer'>
+        <div className='text-background-foreground relative flex h-[450px] w-full cursor-pointer flex-col justify-start gap-1 rounded-[50px] bg-gray-300 px-3 py-2 dark:border dark:bg-background dark:text-foreground'>
             <Image
                 src={p.img_src}
                 alt='item'
@@ -17,21 +19,32 @@ export const NewItemCard = (p: NewItemCardProps) => {
                 height={200}
                 loading='eager'
                 priority
-                className='rounded-3xl mx-auto'
+                className='mx-auto rounded-3xl'
             />
-            <h5 className='text-center mt-2 leading-5 mb-2 font-bold text-lg'>
+            <h5 className='mb-2 mt-2 text-center text-lg font-bold leading-5'>
                 {p.title}
             </h5>
-            <p className='text-[18px] font-normal text-center max-h-16 overflow-hidden'>
+            <p className='max-h-16 overflow-hidden text-center text-[18px] font-normal'>
                 {p.title_desc}
             </p>
-            <p className='text-center font-bold text-lg absolute bottom-3 left-1/2 -translate-x-1/2'>
+            <p className='absolute bottom-3 left-1/2 -translate-x-1/2 text-center text-lg font-bold'>
                 {p.price} сом
             </p>
-            <CirclePlus
-                className='absolute bottom-3 right-3 transition-all text-background-foreground hover:text-green-400 duration-200'
-                size={40}
-                onClick={() => increase(p)}
+            <Plus
+                className='text-background-foreground absolute bottom-3 right-3 rounded-full border-[0.5px] border-secondary transition-all duration-200 hover:border-green-400 hover:text-green-400 dark:border-border dark:hover:border-green-400'
+                size={36}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    increase(p);
+                    toast({
+                        title: 'Продукт добавлен в корзину',
+                        description: (
+                            <div className='text-[18px]'>
+                                <p>{p.title}</p>
+                            </div>
+                        ),
+                    });
+                }}
             />
         </div>
     );

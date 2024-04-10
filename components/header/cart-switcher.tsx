@@ -1,4 +1,10 @@
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '@/components/ui/tooltip';
 import { useCartStore } from '@/lib/store';
 import { cn } from '@/lib/utils';
 import { ShoppingCart } from 'lucide-react';
@@ -25,14 +31,24 @@ export const CartSwitcher = () => {
     }, [cart]);
 
     return (
-        <div className='flex h-max w-max items-center duration-200 p-2 transition-all hover:bg-primary hover:text-primary-foreground rounded-full cursor-pointer'>
+        <TooltipProvider delayDuration={50} disableHoverableContent>
             <Sheet>
-                <SheetTrigger className='outline-none relative'>
-                    <ShoppingCart size={28} className='peer' />
-                    {cart?.length && mounted ? (
-                        <span className='absolute peer-hover:hidden -top-0 -right-1 bg-primary w-3 h-3 rounded-full'></span>
-                    ) : null}
-                </SheetTrigger>
+                <Tooltip>
+                    <TooltipTrigger>
+                        <SheetTrigger asChild className='relative outline-none'>
+                            <div className='group flex h-max w-max cursor-pointer items-center rounded-full p-2 transition-all duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 dark:hover:text-primary-foreground'>
+                                <ShoppingCart size={28} />
+                                {cart?.length && mounted ? (
+                                    <span className='absolute right-1 top-2 h-3 w-3 rounded-full bg-primary' />
+                                ) : null}
+                            </div>
+                        </SheetTrigger>
+                    </TooltipTrigger>
+                    <TooltipContent sideOffset={12}>
+                        <p>Открыть корзину</p>
+                    </TooltipContent>
+                </Tooltip>
+
                 {mounted ? (
                     <SheetContent
                         className={cn('flex items-center justify-center', {
@@ -48,11 +64,11 @@ export const CartSwitcher = () => {
                         />
                     </SheetContent>
                 ) : (
-                    <SheetContent className='flex justify-center items-center'>
-                        Loading...
+                    <SheetContent className='flex items-center justify-center'>
+                        Загрузка...
                     </SheetContent>
                 )}
             </Sheet>
-        </div>
+        </TooltipProvider>
     );
 };
