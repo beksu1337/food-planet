@@ -66,21 +66,18 @@ export const useCartStore = create<CartStore>((set, get) => ({
     cart: getInitialCart(),
 
     getCartItems: () => set((state) => ({ cart: state.cart })),
-
     increase: (newFood: FoodModel, count?: number) => {
         const { cart } = get();
         const updated = increaseFromCount(newFood, cart, count);
         localStorage.setItem('cart', JSON.stringify(updated));
         set({ cart: updated });
     },
-
     decrease: (id) => {
         const { cart } = get();
         const updated = decreaseFromCount(id, cart);
         localStorage.setItem('cart', JSON.stringify(updated));
         set({ cart: updated });
     },
-
     removeAll: () => {
         localStorage.removeItem('cart');
         set({ cart: [] });

@@ -24,3 +24,14 @@ export enum FoodType {
     Salat = 'salat',
     Sushi = 'sushi',
 }
+
+export enum CategoryType {
+    All = 'Все',
+    pizza = 'Пицца',
+    burger = 'Бургер',
+    sushi = 'Суши',
+    rolls = 'Роллы',
+    salat = 'Салаты',
+    desert = 'Десерты',
+    drink = 'Напитки',
+}

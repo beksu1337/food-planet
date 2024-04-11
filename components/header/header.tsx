@@ -9,8 +9,8 @@ import { LogoIcon } from '@/lib/logo-icon';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { AccountSwitcher } from './account-switcher';
 import { CartSwitcher } from './cart-switcher';
-import { LangSwitcher } from './lang-switcher';
 import { ThemeSwitcher } from './theme-switcher';
 
 export const links = [
@@ -47,7 +47,7 @@ export const Header = () => {
                         </div>
                     </Link>
                 </NavigationMenuItem>
-                <div className='no-select mr-10 flex gap-6'>
+                <div className='no-select mr-10 flex gap-6 font-medium'>
                     {links.map((link) => (
                         <NavigationMenuItem key={link.name}>
                             <Link
@@ -64,7 +64,7 @@ export const Header = () => {
                 <div className='flex gap-1'>
                     <CartSwitcher />
                     <ThemeSwitcher />
-                    <LangSwitcher />
+                    <AccountSwitcher />
                 </div>
             </NavigationMenuList>
         </NavigationMenu>

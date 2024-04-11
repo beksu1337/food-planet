@@ -10,8 +10,21 @@ export const NewItemCard = (p: NewItemCardProps) => {
     const { cart, increase } = useCartStore((state) => state);
     const { toast } = useToast();
 
+    const addToCart = (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
+        e.stopPropagation();
+        increase(p);
+        toast({
+            title: 'Продукт добавлен в корзину',
+            description: (
+                <div className='text-[18px]'>
+                    <p>{p.title}</p>
+                </div>
+            ),
+        });
+    };
+
     return (
-        <div className='text-background-foreground relative flex h-[450px] w-full cursor-pointer flex-col justify-start gap-1 rounded-[50px] bg-gray-300 px-3 py-2 dark:border dark:bg-background dark:text-foreground'>
+        <div className='text-background-foreground relative flex h-[450px] w-full cursor-pointer flex-col justify-start gap-1 rounded-[50px] bg-gray-200 px-3 py-2 dark:border dark:bg-background dark:text-foreground'>
             <Image
                 src={p.img_src}
                 alt='item'
@@ -31,20 +44,9 @@ export const NewItemCard = (p: NewItemCardProps) => {
                 {p.price} сом
             </p>
             <Plus
-                className='text-background-foreground absolute bottom-3 right-3 rounded-full border-[0.5px] border-secondary transition-all duration-200 hover:border-green-400 hover:text-green-400 dark:border-border dark:hover:border-green-400'
-                size={36}
-                onClick={(e) => {
-                    e.stopPropagation();
-                    increase(p);
-                    toast({
-                        title: 'Продукт добавлен в корзину',
-                        description: (
-                            <div className='text-[18px]'>
-                                <p>{p.title}</p>
-                            </div>
-                        ),
-                    });
-                }}
+                className='absolute bottom-3 right-3 rounded-full border-secondary  bg-green-300 p-[2px] text-green-600 transition-all duration-200 hover:text-green-700 dark:bg-green-700 dark:text-green-400'
+                size={40}
+                onClick={addToCart}
             />
         </div>
     );

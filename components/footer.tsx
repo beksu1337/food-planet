@@ -7,7 +7,7 @@ import { links } from './header/header';
 
 export const Footer = () => {
     return (
-        <div className='w-full rounded-tl-3xl rounded-tr-3xl bg-secondary p-8 text-secondary-foreground dark:bg-gray-800'>
+        <div className='mt-auto h-max w-full rounded-tl-3xl rounded-tr-3xl bg-secondary p-8 text-secondary-foreground dark:bg-gray-800'>
             <div className='container flex items-center justify-between'>
                 <div className='flex items-center gap-[8px]'>
                     <LogoFooter />

@@ -80,7 +80,7 @@ export const SingleItemModal = ({
                             className='cursor-pointer'
                             onClick={() => handleCount('minus')}
                         />
-                        <div className='rounded-sm bg-slate-400 px-4 text-2xl font-bold text-background'>
+                        <div className='rounded-sm bg-gray-400 px-4 text-2xl font-bold text-background'>
                             {count}
                         </div>
                         <PlusIcon
