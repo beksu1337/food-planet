@@ -57,7 +57,7 @@ export const ThemeSwitcher = () => {
                     className='bg-background'
                 >
                     <DropdownMenuItem
-                        className='cursor-pointer hover:bg-gray-500 hover:text-background dark:hover:bg-secondary-foreground'
+                        className='cursor-pointer hover:bg-gray-400 hover:text-background dark:hover:bg-secondary-foreground'
                         onClick={() => setTheme('light')}
                     >
                         Светлая
@@ -66,7 +66,7 @@ export const ThemeSwitcher = () => {
                     <DropdownMenuSeparator className='bg-border' />
 
                     <DropdownMenuItem
-                        className='cursor-pointer hover:bg-gray-500 hover:text-background dark:hover:bg-secondary-foreground'
+                        className='cursor-pointer hover:bg-gray-400 hover:text-background dark:hover:bg-secondary-foreground'
                         onClick={() => setTheme('dark')}
                     >
                         Темная
@@ -75,7 +75,7 @@ export const ThemeSwitcher = () => {
                     <DropdownMenuSeparator className='bg-border' />
 
                     <DropdownMenuItem
-                        className='cursor-pointer hover:bg-gray-500 hover:text-background dark:hover:bg-secondary-foreground'
+                        className='cursor-pointer hover:bg-gray-400 hover:text-background dark:hover:bg-secondary-foreground'
                         onClick={() => setTheme('system')}
                     >
                         Системная

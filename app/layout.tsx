@@ -3,10 +3,10 @@ import { Header } from '@/components/header/header';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/lib/theme-provider';
 import type { Metadata } from 'next';
-import { Nunito_Sans } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import '../styles/globals.css';
 
-const poppins = Nunito_Sans({
+const roboto = Roboto({
     subsets: ['latin', 'cyrillic'],
     weight: ['400', '500', '700', '900'],
 });
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='ru' suppressHydrationWarning>
-            <body className={poppins.className}>
+            <body className={roboto.className}>
                 <ThemeProvider
                     enableSystem
                     attribute='class'

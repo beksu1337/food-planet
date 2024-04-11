@@ -16,7 +16,7 @@ export const CartList = ({
             {cart?.map((item) => (
                 <div
                     key={item.id}
-                    className='relative flex w-full flex-col flex-wrap items-start gap-2 rounded-sm bg-slate-300 p-2 dark:bg-gray-800'
+                    className='relative flex w-full flex-col flex-wrap items-start gap-2 rounded-sm bg-gray-200 p-2 dark:bg-gray-800'
                 >
                     <div className='w-full pr-14'>
                         <Image
@@ -40,12 +40,12 @@ export const CartList = ({
                         <Minus
                             size={32}
                             onClick={() => decrease(item.id)}
-                            className='cursor-pointer rounded-sm border border-red-500 text-red-500'
+                            className='cursor-pointer rounded-md border border-red-500 text-red-500'
                         />
                         <Plus
                             size={32}
                             onClick={() => increase(item)}
-                            className='cursor-pointer rounded-sm border border-green-500 text-green-500'
+                            className='cursor-pointer rounded-md border border-green-500 text-green-500'
                         />
                     </div>
                 </div>

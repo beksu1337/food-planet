@@ -1,11 +1,13 @@
 import { type ClassValue, clsx } from 'clsx';
+import { Fetcher } from 'swr';
 import { twMerge } from 'tailwind-merge';
+import { FoodModel } from './types';
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
 }
 
-export const fetcher = async (url: string) => {
+export const fetcher: Fetcher<FoodModel[], string> = async (url: string) => {
     const res = await fetch(url);
 
     if (!res.ok) {

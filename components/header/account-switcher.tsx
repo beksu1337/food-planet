@@ -12,9 +12,9 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { Globe } from 'lucide-react';
+import { CircleUserRound } from 'lucide-react';
 
-export const LangSwitcher = () => {
+export const AccountSwitcher = () => {
     return (
         <TooltipProvider delayDuration={50} disableHoverableContent>
             <DropdownMenu>
@@ -25,7 +25,7 @@ export const LangSwitcher = () => {
                             className='no-select flex items-center gap-1 rounded-full p-2 outline-none transition-all duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 dark:hover:text-secondary-foreground'
                         >
                             <div className='flex cursor-pointer items-center gap-2'>
-                                <Globe size={28} />
+                                <CircleUserRound size={28} />
                             </div>
                         </DropdownMenuTrigger>
                     </TooltipTrigger>

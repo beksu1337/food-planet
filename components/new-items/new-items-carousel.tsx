@@ -29,6 +29,7 @@ export const NewItemsCarousel = ({ data }: { data: FoodModel[] }) => {
                     </CarouselItem>
                 ))}
             </CarouselContent>
+
             <CarouselPrevious />
             <CarouselNext />
         </Carousel>
