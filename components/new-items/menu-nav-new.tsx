@@ -38,7 +38,7 @@ export const MenuNavNew = () => {
                 </nav>
 
                 <div>
-                    {error?.status === 404 || isLoading ? (
+                    {!data || error?.status === 404 || isLoading ? (
                         <NewItemSkeleton />
                     ) : (
                         <NewItemsCarousel data={data} />
