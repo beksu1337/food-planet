@@ -15,7 +15,6 @@ export const NewItemsCarousel = ({ data }: { data: FoodModel[] }) => {
             opts={{
                 align: 'start',
             }}
-            className='w-full'
         >
             <CarouselContent>
                 {data?.map((item: FoodModel) => (

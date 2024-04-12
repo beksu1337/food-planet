@@ -9,7 +9,7 @@ export const CartEmpty = () => {
                 alt='shopping'
                 className='img-no-select w-[200px] dark:invert'
             />
-            <p className='text-base font-bold'>Ваша корзина пуста</p>
+            <p className='text-base'>Здесь пока что пусто</p>
         </div>
     );
 };

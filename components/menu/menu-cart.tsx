@@ -1,8 +1,7 @@
 'use client';
 
-import { Loader } from '@/lib/loader';
 import { useCartStore } from '@/lib/store';
-import { Minus, Plus } from 'lucide-react';
+import { LoaderCircle, Minus, Plus } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
@@ -20,7 +19,7 @@ export const MenuCart = () => {
     if (!mounted) {
         return (
             <aside className='sticky top-3 col-span-3 flex h-[500px] items-center justify-center rounded-md border-[0.5px] p-1 shadow-[0_3px_10px_rgba(0,0,0,.1)]'>
-                <Loader />
+                <LoaderCircle className='animate-spin text-primary' size={44} />
             </aside>
         );
     }

@@ -26,7 +26,6 @@ export enum FoodType {
 }
 
 export enum CategoryType {
-    All = 'Все',
     pizza = 'Пицца',
     burger = 'Бургер',
     sushi = 'Суши',

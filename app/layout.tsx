@@ -2,6 +2,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header/header';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/lib/theme-provider';
+import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import '../styles/globals.css';
@@ -19,23 +20,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
     children,
-}: Readonly<{
+}: {
     children: React.ReactNode;
-}>) {
+}) {
     return (
-        <html lang='ru' suppressHydrationWarning>
-            <body className={roboto.className}>
-                <ThemeProvider
-                    enableSystem
-                    attribute='class'
-                    defaultTheme='system'
-                >
-                    <Header />
-                    {children}
-                    <Footer />
-                    <Toaster />
-                </ThemeProvider>
-            </body>
-        </html>
+        <ClerkProvider>
+            <html lang='ru' suppressHydrationWarning>
+                <body className={roboto.className}>
+                    <ThemeProvider
+                        enableSystem
+                        attribute='class'
+                        defaultTheme='system'
+                    >
+                        <Header />
+                        {children}
+                        <Footer />
+                        <Toaster />
+                    </ThemeProvider>
+                </body>
+            </html>
+        </ClerkProvider>
     );
 }

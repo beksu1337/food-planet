@@ -1,15 +1,17 @@
 'use client';
 
 import { MENU_LIST } from '@/lib/const';
-import { useNewTabStore } from '@/lib/store';
+import { useFetchStore } from '@/lib/store';
 import { cn, fetcher } from '@/lib/utils';
+import { useRouter } from 'next/navigation';
 import useSWR from 'swr';
 import { Button } from '../ui/button';
 import { NewItemSkeleton } from './new-item-skeleton';
 import { NewItemsCarousel } from './new-items-carousel';
 
 export const MenuNavNew = () => {
-    const state = useNewTabStore((state) => state);
+    const state = useFetchStore((state) => state);
+    const { push } = useRouter();
 
     const { data, error, isLoading } = useSWR(
         `${process.env.NEXT_PUBLIC_BASE_URL}?type=${state.currentNavTab}`,
@@ -37,7 +39,7 @@ export const MenuNavNew = () => {
                     ))}
                 </nav>
 
-                <div>
+                <div className='px-12'>
                     {!data || error?.status === 404 || isLoading ? (
                         <NewItemSkeleton />
                     ) : (
@@ -46,6 +48,7 @@ export const MenuNavNew = () => {
                 </div>
 
                 <Button
+                    onClick={() => push('/menu')}
                     variant='outline'
                     className='mx-auto mt-5 block rounded-full border border-primary px-4 text-base text-primary'
                 >
