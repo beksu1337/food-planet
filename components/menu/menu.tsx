@@ -3,6 +3,7 @@
 import { MenuItemList } from '@/components/menu/menu-item-list';
 import { MenuNavAside } from '@/components/menu/menu-list-aside';
 import { MenuSearch } from '@/components/menu/menu-search';
+import { useFetchStore } from '@/lib/store';
 import { FoodModel, FoodType } from '@/lib/types';
 import { fetcher } from '@/lib/utils';
 import { useEffect, useState } from 'react';
@@ -15,8 +16,12 @@ export const MenuLayout = () => {
     const [filteredData, setFilteredData] = useState<
         Record<FoodType, FoodModel[]> | undefined
     >();
-    const { data, isLoading } = useSWR(
-        process.env.NEXT_PUBLIC_BASE_URL,
+    const {
+        queryParams: { sort, search },
+    } = useFetchStore((store) => store);
+
+    const { data, isLoading, error } = useSWR(
+        `${process.env.NEXT_PUBLIC_BASE_URL}?sortBy=${sort === 'priceHigher' || sort === 'priceLower' ? 'price' : 'title'}&${sort === 'priceHigher' ? 'order=desc' : 'order=asc'}${search ? `&search=${search}` : ''}`,
         fetcher
     );
 
@@ -51,7 +56,11 @@ export const MenuLayout = () => {
             </aside>
             <div className='col-span-10'>
                 <MenuSearch isLoading={isLoading} />
-                <MenuItemList data={filteredData} isLoading={isLoading} />
+                <MenuItemList
+                    error={error}
+                    data={filteredData}
+                    isLoading={isLoading}
+                />
             </div>
         </>
     );

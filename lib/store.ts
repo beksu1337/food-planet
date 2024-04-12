@@ -2,13 +2,39 @@ import { FoodModel, FoodType } from '@/lib/types';
 import { create } from 'zustand';
 
 // --------------------
-type NewTabStore = {
-    currentNavTab: string;
-    changeCurrentTab: (newCurrent: string) => void;
+export enum Sort {
+    title = 'Названию',
+    priceLower = 'Цене (по возрастанию)',
+    priceHigher = 'Цене (по убыванию)',
+}
+
+type SortType = 'title' | 'priceLower' | 'priceHigher';
+
+type QueryParams = {
+    search: string;
+    sort: SortType;
 };
 
-export const useNewTabStore = create<NewTabStore>((set, get) => ({
+type FetchStore = {
+    currentNavTab: string;
+    queryParams: QueryParams;
+    changeCurrentTab: (newCurrent: string) => void;
+    changeSortParams: (params: SortType) => void;
+    changeSearchParams: (params: string) => void;
+};
+
+export const useFetchStore = create<FetchStore>((set, get) => ({
     currentNavTab: FoodType.Pizza,
+    queryParams: {
+        search: '',
+        sort: 'title',
+    },
+    changeSortParams: (params) =>
+        set(() => ({ queryParams: { ...get().queryParams, sort: params } })),
+
+    changeSearchParams: (params: string) =>
+        set(() => ({ queryParams: { ...get().queryParams, search: params } })),
+
     changeCurrentTab: (newTab) => set(() => ({ currentNavTab: newTab })),
 }));
 

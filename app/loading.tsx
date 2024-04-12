@@ -1,12 +1,12 @@
 'use client';
 
-import { Loader } from '@/lib/loader';
+import { LoaderCircle } from 'lucide-react';
 
 function LoadingPage() {
     return (
         <div className='flex min-h-screen flex-col items-center justify-center'>
             <div className='flex items-center justify-center'>
-                <Loader />
+                <LoaderCircle className='animate-spin text-primary' size={52} />
             </div>
         </div>
     );

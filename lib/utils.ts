@@ -11,7 +11,7 @@ export const fetcher: Fetcher<FoodModel[], string> = async (url: string) => {
     const res = await fetch(url);
 
     if (!res.ok) {
-        const error = new Error('An error occurred while fetching the data.');
+        const error = new Error('Ошибка при отправке запроса') as Error;
         // @ts-ignore
         error.info = await res.json();
         // @ts-ignore
@@ -20,4 +20,15 @@ export const fetcher: Fetcher<FoodModel[], string> = async (url: string) => {
     }
 
     return res.json();
+};
+
+export const debounce = (func: Function, timeout = 1500) => {
+    let timer: NodeJS.Timeout | undefined;
+
+    return (...args: any) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            func.apply(this, args);
+        }, timeout);
+    };
 };

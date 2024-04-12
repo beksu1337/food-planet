@@ -12,9 +12,16 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { UserButton, useAuth, useUser } from '@clerk/nextjs';
 import { CircleUserRound } from 'lucide-react';
 
 export const AccountSwitcher = () => {
+    const { isLoaded, userId, sessionId, getToken } = useAuth();
+
+    if (!isLoaded || !userId) {
+        return null;
+    }
+
     return (
         <TooltipProvider delayDuration={50} disableHoverableContent>
             <DropdownMenu>
@@ -37,8 +44,7 @@ export const AccountSwitcher = () => {
                 <DropdownMenuContent sideOffset={12} className='bg-background'>
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Profile</DropdownMenuItem>
-                    <DropdownMenuItem>Billing</DropdownMenuItem>
+                    <DropdownMenuItem>{userId}</DropdownMenuItem>
                     <DropdownMenuItem>Team</DropdownMenuItem>
                     <DropdownMenuItem>Subscription</DropdownMenuItem>
                 </DropdownMenuContent>

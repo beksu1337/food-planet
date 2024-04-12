@@ -26,7 +26,7 @@ export const ThemeSwitcher = () => {
     if (!mounted) {
         return (
             <div className='p-2'>
-                <Ellipsis size={28} />
+                <Ellipsis size={28} className='animate-pulse' />
             </div>
         );
     }
