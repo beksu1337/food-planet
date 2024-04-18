@@ -1,12 +1,12 @@
-import { useCartStore } from '@/lib/store';
+import { useCartStore } from '@/lib/store/store';
 import { FoodModel } from '@/lib/types';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
-import { useToast } from '../ui/use-toast';
+import { useToast } from '../../ui/use-toast';
 
 interface NewItemCardProps extends FoodModel {}
 
-export const NewItemCard = (p: NewItemCardProps) => {
+export const MenuNewItem = (p: NewItemCardProps) => {
     const { cart, increase } = useCartStore((state) => state);
     const { toast } = useToast();
 

@@ -1,13 +1,13 @@
 'use client';
 
-import { LogoFooter } from '@/lib/logo-footer';
+import { LogoFooter } from '@/lib/icons/logo-footer';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { links } from './header/header';
 
 export const Footer = () => {
     return (
-        <div className='mt-auto h-max w-full rounded-tl-3xl rounded-tr-3xl bg-secondary p-8 text-secondary-foreground dark:bg-slate-800'>
+        <footer className='mt-auto h-max rounded-tl-3xl rounded-tr-3xl bg-secondary p-2 text-secondary-foreground dark:bg-slate-800 md:p-8'>
             <div className='container flex items-center justify-between'>
                 <div className='flex items-center gap-[8px]'>
                     <LogoFooter />
@@ -21,7 +21,7 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <nav className='no-select mr-10 flex gap-6'>
+                <nav className='no-select flex flex-col gap-2 text-right md:mr-10 md:flex-row md:gap-6 md:text-start'>
                     {links.map((link) => (
                         <Link
                             key={link.name}
@@ -33,6 +33,6 @@ export const Footer = () => {
                     ))}
                 </nav>
             </div>
-        </div>
+        </footer>
     );
 };

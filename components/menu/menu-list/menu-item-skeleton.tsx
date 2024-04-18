@@ -1,8 +1,8 @@
-import { Skeleton } from '../ui/skeleton';
+import { Skeleton } from '../../ui/skeleton';
 
-export const MenuSkeleton = () => {
+export const MenuItemsSkeleton = () => {
     return (
-        <div className='grid min-h-[500px] grid-cols-2 gap-2'>
+        <div className='grid min-h-[500px] grid-cols-1 gap-2 sm:grid-cols-2'>
             {[...Array(8)].map((_, i) => (
                 <div
                     key={i}

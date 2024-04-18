@@ -1,11 +1,11 @@
-import { CartItem } from '@/lib/store';
-import { CartEmpty } from '../cart/cart-empty';
-import { CartList } from '../cart/cart-list';
+import { CartItem } from '@/lib/store/store';
 import { Button } from '../ui/button';
 import { ScrollArea } from '../ui/scroll-area';
 import { useToast } from '../ui/use-toast';
+import { CartEmpty } from './cart-empty';
+import { CartList } from './cart-list';
 
-export const SheetCart = ({
+export const Cart = ({
     cart,
     finalCost,
     removeAll,

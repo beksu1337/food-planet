@@ -4,10 +4,10 @@ import icon4 from '/public/location.png';
 import icon3 from '/public/menu.png';
 import icon2 from '/public/salad.png';
 
-export const Benefits = () => {
+export const BenefitsSection = () => {
     return (
-        <div className='container mb-10 mt-4 grid grid-cols-4 justify-between gap-3'>
-            <div className='flex flex-col items-center gap-2 rounded-3xl border border-secondary p-2'>
+        <div className='container mb-10 mt-4 grid grid-cols-1 justify-between gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4'>
+            <div className='flex flex-col items-center gap-2 rounded-3xl border border-secondary p-2 md:flex'>
                 <div className='w-max rounded-full border-2 border-secondary p-3 dark:bg-foreground'>
                     <Image
                         src={icon1}

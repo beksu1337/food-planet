@@ -8,7 +8,7 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { useFetchStore } from '@/lib/store';
+import { useFetchStore } from '@/lib/store/store';
 import { fetcher } from '@/lib/utils';
 import { Loader2, Pencil, Trash } from 'lucide-react';
 import Image from 'next/image';
@@ -55,7 +55,9 @@ export function DashboardList() {
                 <TableHeader>
                     <TableRow>
                         <TableHead className='w-[80px]'>№</TableHead>
-                        <TableHead className='w-1/2'>Название</TableHead>
+                        <TableHead className='w-[400px] md:w-1/2'>
+                            Название
+                        </TableHead>
                         <TableHead>Цена</TableHead>
                         <TableHead className='w-[400px] text-end'>
                             Управление

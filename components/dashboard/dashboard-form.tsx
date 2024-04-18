@@ -15,7 +15,7 @@ import {
     FormLabel,
     FormMessage,
 } from '@/components/ui/form';
-import { useFetchStore } from '@/lib/store';
+import { useFetchStore } from '@/lib/store/store';
 import { FoodModel, FoodType } from '@/lib/types';
 import { CategoryType } from '@/lib/types';
 import { createProduct, editProduct, removeProduct } from '@/lib/utils';

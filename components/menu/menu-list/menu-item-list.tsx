@@ -1,8 +1,7 @@
 import { CategoryType, FoodModel, FoodType } from '@/lib/types';
 import Image from 'next/image';
 import { MenuItem } from './menu-item';
-import { MenuSkeleton } from './menu-skeleton';
-import Error from '/public/error.png';
+import { MenuItemsSkeleton } from './menu-item-skeleton';
 import notFound from '/public/planet.png';
 
 export const MenuItemList = ({
@@ -42,7 +41,7 @@ export const MenuItemList = ({
         <div className='col-span-10 col-start-3 w-full'>
             <div className='col-span-10 rounded-sm pb-6'>
                 {isLoading || !data ? (
-                    <MenuSkeleton />
+                    <MenuItemsSkeleton />
                 ) : (
                     <div>
                         {orderedKeys.map((key) => {
@@ -64,7 +63,7 @@ export const MenuItemList = ({
                                             ]
                                         }
                                     </h2>
-                                    <div className='grid grid-cols-2 gap-2'>
+                                    <div className='grid grid-cols-1 gap-2 sm:grid-cols-2'>
                                         {products.map((product) => (
                                             <MenuItem
                                                 key={product.id}

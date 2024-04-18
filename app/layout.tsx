@@ -1,7 +1,7 @@
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header/header';
 import { Toaster } from '@/components/ui/toaster';
-import { ThemeProvider } from '@/lib/theme-provider';
+import { ThemeProvider } from '@/lib/providers/theme-provider';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import '../styles/globals.css';

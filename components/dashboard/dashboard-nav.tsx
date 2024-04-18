@@ -1,7 +1,7 @@
 'use client';
 
 import { MENU_LIST } from '@/lib/const';
-import { useFetchStore } from '@/lib/store';
+import { useFetchStore } from '@/lib/store/store';
 import { cn, fetcher } from '@/lib/utils';
 import { Blocks } from 'lucide-react';
 import useSWR from 'swr';
@@ -26,8 +26,8 @@ export const DashboardNav = () => {
     }
 
     return (
-        <nav className='sticky top-0 z-20 mt-3 flex items-center justify-between border-b bg-background p-5 pb-3 pt-3'>
-            <div className='flex gap-6'>
+        <nav className='static top-0 z-20 mt-3 flex flex-col items-center justify-between border-b bg-background p-5 pb-3 pt-3 md:sticky md:flex-row'>
+            <div className='flex flex-col gap-1 md:flex-row md:gap-6'>
                 {MENU_LIST.map((item) => (
                     <div
                         className={cn(

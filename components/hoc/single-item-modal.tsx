@@ -8,13 +8,13 @@ import {
     DialogTitle,
     DialogTrigger,
 } from '@/components/ui/dialog';
-import { useCartStore } from '@/lib/store';
+import { useCartStore } from '@/lib/store/store';
 import { FoodModel } from '@/lib/types';
 import { MinusIcon, PlusIcon } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Button } from './ui/button';
-import { useToast } from './ui/use-toast';
+import { Button } from '../ui/button';
+import { useToast } from '../ui/use-toast';
 
 interface SingleItemModalProps extends FoodModel {
     children: React.ReactNode;

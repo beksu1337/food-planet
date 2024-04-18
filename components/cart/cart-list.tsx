@@ -1,4 +1,4 @@
-import { CartItem } from '@/lib/store';
+import { CartItem } from '@/lib/store/store';
 import { Minus, Plus } from 'lucide-react';
 import Image from 'next/image';
 
