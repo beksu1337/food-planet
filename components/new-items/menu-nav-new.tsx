@@ -2,8 +2,10 @@
 
 import { MENU_LIST } from '@/lib/const';
 import { useFetchStore } from '@/lib/store';
+import { FoodModel } from '@/lib/types';
 import { cn, fetcher } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import { Button } from '../ui/button';
 import { NewItemSkeleton } from './new-item-skeleton';
@@ -11,12 +13,24 @@ import { NewItemsCarousel } from './new-items-carousel';
 
 export const MenuNavNew = () => {
     const state = useFetchStore((state) => state);
+    const [newData, setNewData] = useState<FoodModel[]>([]);
     const { push } = useRouter();
 
     const { data, error, isLoading } = useSWR(
         `${process.env.NEXT_PUBLIC_BASE_URL}?type=${state.currentNavTab}`,
         fetcher
     );
+
+    useEffect(() => {
+        if (data) {
+            const sortedData = [...data].sort(
+                (a, b) => parseInt(a.id) - parseInt(b.id)
+            );
+            const filteredData = sortedData.reverse().slice(0, 8);
+
+            setNewData(filteredData);
+        }
+    }, [data]);
 
     return (
         <div className='relative border-t pb-6 pt-3'>
@@ -28,7 +42,7 @@ export const MenuNavNew = () => {
                     {MENU_LIST.map((item) => (
                         <div
                             className={cn('cursor-pointer hover:text-primary', {
-                                'text-primary':
+                                'text-primary underline underline-offset-[6px]':
                                     item.url === state.currentNavTab,
                             })}
                             onClick={() => state.changeCurrentTab(item.url)}
@@ -43,7 +57,7 @@ export const MenuNavNew = () => {
                     {!data || error?.status === 404 || isLoading ? (
                         <NewItemSkeleton />
                     ) : (
-                        <NewItemsCarousel data={data} />
+                        <NewItemsCarousel data={newData} />
                     )}
                 </div>
 

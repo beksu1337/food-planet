@@ -12,11 +12,11 @@ export const CartList = ({
     decrease: (id: string) => void;
 }) => {
     return (
-        <div className='no-select flex w-full flex-col gap-3 pr-4'>
+        <div className='no-select flex w-full flex-col gap-2 pr-4'>
             {cart?.map((item) => (
                 <div
                     key={item.id}
-                    className='relative flex w-full flex-col flex-wrap items-start gap-2 rounded-sm bg-gray-200 p-2 dark:bg-gray-800'
+                    className='relative flex w-full flex-col flex-wrap items-start gap-2 rounded-sm bg-zinc-100 p-2 dark:bg-gray-800'
                 >
                     <div className='w-full pr-14'>
                         <Image

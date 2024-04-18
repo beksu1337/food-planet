@@ -17,7 +17,7 @@ import { useEffect, useState } from 'react';
 
 export const ThemeSwitcher = () => {
     const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme();
+    const { setTheme, resolvedTheme } = useTheme();
 
     useEffect(() => {
         setMounted(true);
@@ -25,7 +25,7 @@ export const ThemeSwitcher = () => {
 
     if (!mounted) {
         return (
-            <div className='p-2'>
+            <div className='ml-2 p-2'>
                 <Ellipsis size={28} className='animate-pulse' />
             </div>
         );
@@ -37,8 +37,8 @@ export const ThemeSwitcher = () => {
                 <Tooltip>
                     <TooltipTrigger>
                         <DropdownMenuTrigger asChild>
-                            <div className='h-max w-max cursor-pointer justify-center rounded-full p-2 transition-all duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 dark:hover:text-primary-foreground'>
-                                {theme === 'dark' ? (
+                            <div className='ml-2 h-max w-max cursor-pointer justify-center rounded-full p-2 transition-all  duration-200 hover:bg-gray-300 dark:hover:bg-gray-700 dark:hover:text-primary-foreground'>
+                                {resolvedTheme === 'dark' ? (
                                     <Sun size={28} />
                                 ) : (
                                     <Moon size={28} />
@@ -52,8 +52,9 @@ export const ThemeSwitcher = () => {
                 </Tooltip>
 
                 <DropdownMenuContent
-                    align='center'
+                    align='end'
                     sideOffset={12}
+                    alignOffset={-10}
                     className='bg-background'
                 >
                     <DropdownMenuItem

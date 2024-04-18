@@ -41,7 +41,7 @@ export const MenuCart = () => {
                             {cart.map((item) => (
                                 <div
                                     key={item.id}
-                                    className='no-select relative flex w-full flex-col flex-wrap items-start gap-2 rounded-sm bg-gray-200 p-2 dark:bg-gray-800'
+                                    className='no-select relative flex w-full flex-col flex-wrap items-start gap-1 rounded-sm bg-slate-100 p-2 dark:bg-gray-800'
                                 >
                                     <div className='w-full pr-14'>
                                         <Image
@@ -49,7 +49,7 @@ export const MenuCart = () => {
                                             alt='item'
                                             width={50}
                                             height={50}
-                                            className='img-no-select absolute right-[6px] top-[6px] rounded-md'
+                                            className='img-no-select absolute right-[6px] top-[6px] h-[50px] w-[50px] rounded-md object-cover'
                                         />
                                         <p className='min-h-[50px] pb-1 leading-4'>
                                             <span className='mr-2 font-black'>

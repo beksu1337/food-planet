@@ -16,13 +16,13 @@ export type FoodModel = {
 };
 
 export enum FoodType {
-    Burger = 'burger',
-    Desert = 'desert',
-    Drink = 'drink',
-    Pizza = 'pizza',
-    Rolls = 'rolls',
-    Salat = 'salat',
-    Sushi = 'sushi',
+    burger = 'burger',
+    desert = 'desert',
+    drink = 'drink',
+    pizza = 'pizza',
+    rolls = 'rolls',
+    salat = 'salat',
+    sushi = 'sushi',
 }
 
 export enum CategoryType {

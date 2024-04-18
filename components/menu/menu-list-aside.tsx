@@ -11,11 +11,13 @@ export const MenuNavAside = () => {
                 Разделы
             </h4>
             {MENU_LIST.map((el) => (
-                <div key={el.id}>
+                <div
+                    key={el.id}
+                    className='cursor-pointer transition-all hover:text-primary'
+                >
                     <Link
-                        className='text-sm'
-                        href={`/menu/#${el.url}`}
-                        scroll={true}
+                        className='block h-full w-full text-sm'
+                        href={`#${el.url}`}
                     >
                         {el.title}
                     </Link>

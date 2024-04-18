@@ -34,7 +34,7 @@ export const MenuItem = (food: MenuItemProps) => {
 
     return (
         <SingleItemModal {...food}>
-            <div className='flex h-40 flex-col justify-between rounded-md border p-2 pt-3 transition-all duration-200 hover:scale-[102%]'>
+            <div className='flex h-40 flex-col justify-between rounded-md border bg-background p-2 pt-3 transition-all duration-200 hover:scale-[102%]'>
                 <div className='flex items-start gap-2 overflow-hidden '>
                     <Image
                         src={food.img_src}
@@ -42,7 +42,7 @@ export const MenuItem = (food: MenuItemProps) => {
                         quality={60}
                         width={100}
                         height={100}
-                        className='rounded-lg'
+                        className='h-[100px] w-[100px] rounded-lg object-cover'
                     />
                     <div>
                         <h4 className='mb-1 max-h-[42px] overflow-hidden pb-1 text-left font-bold leading-4'>

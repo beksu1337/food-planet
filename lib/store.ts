@@ -16,15 +16,15 @@ type QueryParams = {
 };
 
 type FetchStore = {
-    currentNavTab: string;
+    currentNavTab: FoodType;
     queryParams: QueryParams;
-    changeCurrentTab: (newCurrent: string) => void;
+    changeCurrentTab: (newCurrent: FoodType) => void;
     changeSortParams: (params: SortType) => void;
     changeSearchParams: (params: string) => void;
 };
 
 export const useFetchStore = create<FetchStore>((set, get) => ({
-    currentNavTab: FoodType.Pizza,
+    currentNavTab: FoodType.pizza,
     queryParams: {
         search: '',
         sort: 'title',
@@ -35,7 +35,8 @@ export const useFetchStore = create<FetchStore>((set, get) => ({
     changeSearchParams: (params: string) =>
         set(() => ({ queryParams: { ...get().queryParams, search: params } })),
 
-    changeCurrentTab: (newTab) => set(() => ({ currentNavTab: newTab })),
+    changeCurrentTab: (newTab: FoodType) =>
+        set(() => ({ currentNavTab: newTab })),
 }));
 
 // --------------------

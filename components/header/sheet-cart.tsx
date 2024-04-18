@@ -33,14 +33,13 @@ export const SheetCart = ({
             <div className='flex gap-2'>
                 <Button
                     onClick={removeAllHandler}
-                    className='mb-2 rounded-xl text-base hover:bg-primary'
+                    className='mb-2 rounded-md text-base hover:bg-primary'
                     tabIndex={-1}
                 >
                     Очистить корзину
                 </Button>
                 <Button
-                    onClick={removeAllHandler}
-                    className='mb-2 rounded-xl bg-blue-500 text-base hover:bg-blue-600'
+                    className='mb-2 rounded-md bg-blue-500 text-base hover:bg-blue-600'
                     tabIndex={-1}
                 >
                     К оплате

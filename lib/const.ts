@@ -4,36 +4,36 @@ export const MENU_LIST = [
     {
         title: 'Пицца',
         id: 1,
-        url: FoodType.Pizza,
+        url: FoodType.pizza,
     },
     {
         title: 'Бургер',
         id: 2,
-        url: FoodType.Burger,
+        url: FoodType.burger,
     },
     {
         title: 'Суши',
         id: 3,
-        url: FoodType.Sushi,
+        url: FoodType.sushi,
     },
     {
         title: 'Роллы',
         id: 4,
-        url: FoodType.Rolls,
+        url: FoodType.rolls,
     },
     {
         title: 'Салаты',
         id: 5,
-        url: FoodType.Salat,
+        url: FoodType.salat,
     },
     {
         title: 'Десерты',
         id: 6,
-        url: FoodType.Desert,
+        url: FoodType.desert,
     },
     {
         title: 'Напитки',
         id: 7,
-        url: FoodType.Drink,
+        url: FoodType.drink,
     },
 ];

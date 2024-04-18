@@ -68,7 +68,7 @@ export const SingleItemModal = ({
                     src={rest.img_src}
                     alt='Food'
                     quality={60}
-                    className='img-no-select no-select mx-auto rounded-xl'
+                    className='img-no-select no-select mx-auto h-[300px] w-[300px] rounded-xl object-cover'
                     width={300}
                     height={300}
                 />
