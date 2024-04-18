@@ -5,11 +5,11 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { useCartStore } from '@/lib/store';
+import { useCartStore } from '@/lib/store/store';
 import { cn } from '@/lib/utils';
 import { ShoppingCart } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { SheetCart } from './sheet-cart';
+import { Cart } from '../cart/cart';
 
 export const CartSwitcher = () => {
     const { cart, removeAll, decrease, increase } = useCartStore(
@@ -55,7 +55,7 @@ export const CartSwitcher = () => {
                             'items-start justify-start': mounted && cart.length,
                         })}
                     >
-                        <SheetCart
+                        <Cart
                             cart={cart}
                             removeAll={removeAll}
                             finalCost={finalCost}

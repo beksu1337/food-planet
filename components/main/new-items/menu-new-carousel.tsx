@@ -1,15 +1,15 @@
 import { FoodModel } from '@/lib/types';
-import { SingleItemModal } from '../item-modal';
+import { SingleItemModal } from '../../hoc/single-item-modal';
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from '../ui/carousel';
-import { NewItemCard } from './new-item-card';
+} from '../../ui/carousel';
+import { MenuNewItem } from './menu-new-item';
 
-export const NewItemsCarousel = ({ data }: { data: FoodModel[] }) => {
+export const MenuNewCarousel = ({ data }: { data: FoodModel[] }) => {
     return (
         <Carousel
             opts={{
@@ -23,14 +23,14 @@ export const NewItemsCarousel = ({ data }: { data: FoodModel[] }) => {
                         className='no-select h-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4'
                     >
                         <SingleItemModal {...item}>
-                            <NewItemCard {...item} />
+                            <MenuNewItem {...item} />
                         </SingleItemModal>
                     </CarouselItem>
                 ))}
             </CarouselContent>
 
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className='max-md:hidden' />
+            <CarouselNext className='max-md:hidden' />
         </Carousel>
     );
 };

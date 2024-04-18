@@ -4,12 +4,12 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { useCartStore } from '@/lib/store';
+import { useCartStore } from '@/lib/store/store';
 import { FoodModel } from '@/lib/types';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
-import { SingleItemModal } from '../item-modal';
-import { useToast } from '../ui/use-toast';
+import { SingleItemModal } from '../../hoc/single-item-modal';
+import { useToast } from '../../ui/use-toast';
 
 interface MenuItemProps extends FoodModel {
     id: string;

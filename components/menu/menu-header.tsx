@@ -7,10 +7,10 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
-import { Sort, useFetchStore } from '@/lib/store';
+import { Sort, useFetchStore } from '@/lib/store/store';
 import { useEffect, useState } from 'react';
 
-export const MenuHeaderSort = () => {
+export const MenuHeader = () => {
     const [mount, setMount] = useState(false);
     const { changeSortParams, queryParams } = useFetchStore();
 
@@ -20,7 +20,7 @@ export const MenuHeaderSort = () => {
 
     if (mount) {
         return (
-            <div className='flex items-center justify-between gap-3'>
+            <div className='flex flex-col items-center justify-between gap-1 sm:flex-row sm:gap-3'>
                 <p className='text-nowrap text-sm'>Сортировать по</p>
 
                 <Select

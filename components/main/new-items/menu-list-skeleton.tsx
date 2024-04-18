@@ -1,6 +1,6 @@
-import { Skeleton } from '../ui/skeleton';
+import { Skeleton } from '../../ui/skeleton';
 
-export const NewItemSkeleton = () => {
+export const MenuListSkeleton = () => {
     return (
         <div className='grid h-[450px] w-full grid-cols-4 gap-4'>
             {[...Array(4)].map((_, i) => (

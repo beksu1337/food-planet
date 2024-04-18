@@ -1,14 +1,14 @@
 'use client';
 
-import { useCartStore } from '@/lib/store';
+import { useCartStore } from '@/lib/store/store';
 import { LoaderCircle, Minus, Plus } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { Button } from '../ui/button';
-import { ScrollArea } from '../ui/scroll-area';
+import { Button } from '../../ui/button';
+import { ScrollArea } from '../../ui/scroll-area';
 import { MenuCartEmpty } from './menu-cart-empty';
 
-export const MenuCart = () => {
+export const MenuCartAside = () => {
     const { cart, increase, decrease } = useCartStore();
     const [mounted, setMounted] = useState(false);
 
@@ -25,11 +25,11 @@ export const MenuCart = () => {
     }
 
     return (
-        <aside className='sticky top-3 col-span-3 h-[500px] rounded-md border-[0.5px] py-2 pb-3 pl-3 shadow-[0_3px_10px_rgba(0,0,0,.1)]'>
+        <aside className='sticky top-3 col-span-3 hidden h-[500px] rounded-md border-[0.5px] py-2 pb-3 pl-3 shadow-[0_3px_10px_rgba(0,0,0,.1)] md:block'>
             {cart?.length && mounted ? (
                 <div className='h-full'>
-                    <div className='mb-2 flex max-h-[40px] items-start justify-between pr-3'>
-                        <h4 className='pl-2 text-center text-lg font-bold'>
+                    <div className='mb-6 flex max-h-[40px] flex-col items-center justify-between gap-1 pr-3 xl:mb-2 xl:flex-row xl:gap-0'>
+                        <h4 className='pl-2 text-center text-lg font-bold leading-4'>
                             Ваш заказ
                         </h4>
                         <Button className='block h-7 rounded-full p-1 px-3 hover:bg-primary'>

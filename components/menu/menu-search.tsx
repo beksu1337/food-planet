@@ -1,5 +1,5 @@
 import { Input } from '@/components/ui/input';
-import { useFetchStore } from '@/lib/store';
+import { useFetchStore } from '@/lib/store/store';
 import { debounce } from '@/lib/utils';
 import { Loader2, Search } from 'lucide-react';
 import { useEffect } from 'react';
