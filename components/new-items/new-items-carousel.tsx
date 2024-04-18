@@ -20,7 +20,7 @@ export const NewItemsCarousel = ({ data }: { data: FoodModel[] }) => {
                 {data?.map((item: FoodModel) => (
                     <CarouselItem
                         key={item.id}
-                        className='no-select h-full md:basis-1/2 lg:basis-1/4'
+                        className='no-select h-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4'
                     >
                         <SingleItemModal {...item}>
                             <NewItemCard {...item} />

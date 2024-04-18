@@ -46,11 +46,14 @@
         scrollbar-gutter: stable;
     } */
 
+    html {
+        @apply scroll-smooth;
+    }
+
     html,
     body {
         overscroll-behavior-y: none !important;
 
-        scroll-behavior: smooth;
         -webkit-font-smoothing: antialiased;
         font-synthesis: none;
         text-rendering: optimizeLegibility;

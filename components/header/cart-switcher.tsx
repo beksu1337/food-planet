@@ -36,7 +36,7 @@ export const CartSwitcher = () => {
                 <Tooltip>
                     <TooltipTrigger>
                         <SheetTrigger asChild className='relative outline-none'>
-                            <div className='group flex h-max w-max cursor-pointer items-center rounded-full p-2 transition-all duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 dark:hover:text-primary-foreground'>
+                            <div className='group flex h-max w-max cursor-pointer items-center rounded-full p-2 transition-all duration-200 hover:bg-gray-300 dark:hover:bg-gray-700 dark:hover:text-primary-foreground'>
                                 <ShoppingCart size={28} />
                                 {cart?.length && mounted ? (
                                     <span className='absolute right-1 top-2 h-3 w-3 rounded-full bg-primary' />

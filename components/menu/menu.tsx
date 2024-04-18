@@ -51,12 +51,14 @@ export const MenuLayout = () => {
                 <h1 className='h-full text-3xl font-bold'>Меню</h1>
                 <MenuHeaderSort />
             </div>
+
             <aside className='sticky top-3 col-span-2 h-[500px] rounded-sm border-[0.5px] border-slate-200 shadow-lg dark:border-[0.5px]'>
                 <MenuNavAside />
             </aside>
             <div className='col-span-10'>
                 <MenuSearch isLoading={isLoading} />
                 <MenuItemList
+                    totalProducts={data?.length}
                     error={error}
                     data={filteredData}
                     isLoading={isLoading}

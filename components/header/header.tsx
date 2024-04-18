@@ -9,7 +9,6 @@ import { LogoIcon } from '@/lib/logo-icon';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { AccountSwitcher } from './account-switcher';
 import { CartSwitcher } from './cart-switcher';
 import { ThemeSwitcher } from './theme-switcher';
 
@@ -23,17 +22,17 @@ export const links = [
         href: '/menu',
     },
     {
-        name: 'О нас',
-        href: '/about',
+        name: 'Редактировать',
+        href: '/dashboard',
     },
 ];
 
-export const Header = () => {
+export const Header = async () => {
     const path = usePathname();
 
     return (
-        <NavigationMenu className='container relative w-full pt-4'>
-            <NavigationMenuList className='items-center justify-between rounded-full border px-6 py-2'>
+        <NavigationMenu className='absolute mx-auto w-full bg-gray-200  dark:bg-slate-800'>
+            <NavigationMenuList className='items-center justify-between rounded-full px-6 py-2'>
                 <NavigationMenuItem>
                     <Link href='/' className='flex items-center gap-[8px]'>
                         <LogoIcon />
@@ -49,7 +48,10 @@ export const Header = () => {
                 </NavigationMenuItem>
                 <div className='no-select mr-10 flex gap-6 font-medium'>
                     {links.map((link) => (
-                        <NavigationMenuItem key={link.name}>
+                        <NavigationMenuItem
+                            key={link.name}
+                            className='flex items-center gap-1'
+                        >
                             <Link
                                 className={cn('hover:text-primary', {
                                     'text-primary': path === link.href,
@@ -61,10 +63,9 @@ export const Header = () => {
                         </NavigationMenuItem>
                     ))}
                 </div>
-                <div className='flex gap-1'>
+                <div className='flex'>
                     <CartSwitcher />
                     <ThemeSwitcher />
-                    <AccountSwitcher />
                 </div>
             </NavigationMenuList>
         </NavigationMenu>

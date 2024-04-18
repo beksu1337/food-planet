@@ -6,14 +6,16 @@ import burgerImg from '/public/burger.png';
 
 export default async function Home() {
     return (
-        <main className='min-h-screen'>
-            <div className='container mb-44 flex justify-between'>
+        <main>
+            <div className='container flex h-screen items-center justify-between pt-16'>
                 <InitialSection />
                 <Image
                     src={burgerImg}
                     alt='burger'
                     priority
-                    className='img-no-select no-select mt-20'
+                    width={600}
+                    quality={60}
+                    className='img-no-select no-select'
                     loading='eager'
                 />
             </div>
